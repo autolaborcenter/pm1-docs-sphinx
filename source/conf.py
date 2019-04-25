@@ -64,3 +64,16 @@ html_theme = 'haiku'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['static_resources']
+
+
+# import recommonmark
+# from recommonmark.transform import AutoStructify
+
+# github_doc_root = 'https://github.com/rtfd/recommonmark/tree/master/doc/'
+# def setup(app):
+#     app.add_config_value(
+#         'recommonmark_config', 
+#         { 'enable_auto_toc_tree': True }, 
+#         True
+#     )
+#     app.add_transform(AutoStructify)
