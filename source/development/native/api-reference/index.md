@@ -1,0 +1,49 @@
+# C++ API REFERENCE
+
+* [API 约定](API-design.md)
+* 类型
+  * [`autolabor::pm1::result`](result.md)
+  * [`autolabor::pm1::parameter_id`](parameter_id.md)
+  * [`autolabor::pm1::chassis_state`](chassis_state.md)
+  * [`autolabor::pm1::odometry`](odometry.md)
+* 连接控制
+  * [`autolabor::pm1::initialize`](initialize.md)
+  * [`autolabor::pm1::shutdown`](shutdown.md)
+* 参数访问
+  * [`autolabor::pm1::get_default_parameter`](get_default_parameter.md)
+  * [`autolabor::pm1::get_parameter`](get_parameter.md)
+  * [`autolabor::pm1::set_parameter`](set_parameter.md)
+  * [`autolabor::pm1::reset_parameter`](reset_parameter.md)
+* 状态访问
+  * [`autolabor::pm1::get_odometry`](get_odometry.md)
+  * [`autolabor::pm1::reset_odometry`](reset_odometry.md)
+  * [`autolabor::pm1::lock`](lock.md)
+  * [`autolabor::pm1::unlock`](unlock.md)
+  * [`autolabor::pm1::check_state`](check_state.md)
+* 连续控制
+  * [`autolabor::pm1::drive_physical`](drive_physical.md)
+  * [`autolabor::pm1::drive_wheels`](drive_wheels.md)
+  * [`autolabor::pm1::drive_velocity`](drive_velocity.md)
+  * [`autolabor::pm1::drive`](drive.md)
+* 动作控制
+  * [`autolabor::pm1::go_straight`](go_straight.md)
+  * [`autolabor::pm1::go_straight_timing`](go_straight_timing.md)
+  * [`autolabor::pm1::turn_around`](turn_around.md)
+  * [`autolabor::pm1::turn_around_timing`](turn_around_timing.md)
+  * [`autolabor::pm1::go_arc_vs`](go_arc_vs.md)
+  * [`autolabor::pm1::go_arc_va`](go_arc_va.md)
+  * [`autolabor::pm1::go_arc_ws`](go_arc_ws.md)
+  * [`autolabor::pm1::go_arc_wa`](go_arc_wa.md)
+  * [`autolabor::pm1::go_arc_vt`](go_arc_vt.md)
+  * [`autolabor::pm1::go_arc_wt`](go_arc_wt.md)
+  * [`autolabor::pm1::pause`](pause.md)
+  * [`autolabor::pm1::resume`](resume.md)
+  * [`autolabor::pm1::is_paused`](is_paused.md)
+  * [`autolabor::pm1::cancel_action`](cancel_action.md)
+* 高级动作控制
+  * [`autolabor::pm1::calculate_spatium`](calculate_spatium.md)
+  * [`autolabor::pm1::drive_spatial`](drive_spatial.md)
+  * [`autolabor::pm1::drive_timing`](drive_timing.md)
+* 其他
+  * [`autolabor::pm1::serial_ports`](serial_ports.md)
+  * [`autolabor::pm1::delay`](delay.md)
