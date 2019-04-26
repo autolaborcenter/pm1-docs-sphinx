@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Autolabor PM1 Doc'
+project = 'Autolabor PM1'
 copyright = '2019, Autolabor'
 author = 'yangdr'
 
