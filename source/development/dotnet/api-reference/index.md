@@ -1,14 +1,33 @@
 # C# API REFERENCE
 
-- [`Autolabor.PM1.Parameter`](Parameter.md)
-- [`Autolabor.PM1.Parameters`](Parameters.md)
-- [`Autolabor.PM1.StateEnum`](StateEnum.md)
+- [`Autolabor.PM1.Parameter`](Parameter)
+- [`Autolabor.PM1.Parameters`](Parameters)
+- [`Autolabor.PM1.StateEnum`](StateEnum)
 - [`Autolabor.PM1.Methods`](Methods)
   - 连接控制
-    - [`Autolabor.PM1.Methods.Initialize`](initialize.md)
+    - [`Autolabor.PM1.Methods.Initialize`](Methods/Initialize)
+    - [`Autolabor.PM1.Methods.ShutDown`](Methods/ShutDown)
   - 参数访问
+    - [`Autolabor.PM1.Methods.Parameters`](Methods/Parameters)
   - 状态访问
+    - [`Autolabor.PM1.Methods.State`](Methods/State)
+    - [`Autolabor.PM1.Methods.Odometry`](Methods/Odometry)
   - 连续控制
+    - [`Autolabor.PM1.Methods.PhysicalTarget`](Methods/PhysicalTarget)
+    - [`Autolabor.PM1.Methods.WheelsTarget`](Methods/WheelsTarget)
+    - [`Autolabor.PM1.Methods.VelocityTarget`](Methods/VelocityTarget)
   - 动作控制
+    - [`Autolabor.PM1.Methods.GoArcVS`](Methods/GoArcVS)
+    - [`Autolabor.PM1.Methods.GoArcVA`](Methods/GoArcVA)
+    - [`Autolabor.PM1.Methods.GoArcWS`](Methods/GoArcWS)
+    - [`Autolabor.PM1.Methods.GoArcWA`](Methods/GoArcWA)
+    - [`Autolabor.PM1.Methods.GoArcVT`](Methods/GoArcVT)
+    - [`Autolabor.PM1.Methods.GoArcWT`](Methods/GoArcWT)
+    - [`Autolabor.PM1.Methods.Paused`](Methods/Paused)
+    - [`Autolabor.PM1.Methods.CancelAction`](Methods/CancelAction)
   - 高级动作控制
+    - [`Autolabor.PM1.Methods.SpatiumCalculate`](Methods/SpatiumCalculate)
+    - [`Autolabor.PM1.Methods.DriveSpatial`](Methods/DriveSpatial)
+    - [`Autolabor.PM1.Methods.DriveTiming`](Methods/DriveTiming)
+    - [`Autolabor.PM1.Methods.AdjustRudder`](Methods/AdjustRudder)
 - [`Autolabor.PM1.AsyncMethods`](AsyncMethods)

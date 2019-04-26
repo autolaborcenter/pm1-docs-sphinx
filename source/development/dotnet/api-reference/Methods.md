@@ -32,7 +32,7 @@ public static class Methods
 | ------------------------------------------ | ----------------------- |
 | [`Parameters`](Methods/Parameters)         | 获取参数索引器。          |
 | [`Odometry`](Methods/Odometry)             | 获取里程计读数。          |
-| [`StateEnum`](Methods/StateEnum)           | 获取或设置底盘工作状态。   |
+| [`State`](Methods/State)           | 获取或设置底盘工作状态。   |
 | [`PhysicalTarget`](Methods/PhysicalTarget) | 设置物理模型下的目标速度。 |
 | [`WheelsTarget`](Methods/WheelsTarget)     | 设置差动模型下的目标速度。 |
 | [`VelocityTarget`](Methods/VelocityTarget) | 设置运动模型下的目标速度。 |
@@ -54,10 +54,10 @@ public static class Methods
 | [`GoStraight`](Methods/GoStraight)             | 动作：直线行驶。                  |
 | [`TurnAround`](Methods/TurnAround)             | 动作：原地转身。                  |
 | [`GoArcVS`](Methods/GoArcVS)                   | 动作：按圆弧行驶。                |
-| [`GoArcVS`](Methods/GoArcVA)                   | 动作：按圆弧行驶。                |
-| [`GoArcVS`](Methods/GoArcWS)                   | 动作：按圆弧行驶。                |
-| [`GoArcVS`](Methods/GoArcWA)                   | 动作：按圆弧行驶。                |
-| [`GoArcVS`](Methods/GoArcVT)                   | 动作：按圆弧行驶。                |
-| [`GoArcVS`](Methods/GoArcWT)                   | 动作：按圆弧行驶。                |
+| [`GoArcVA`](Methods/GoArcVA)                  | 动作：按圆弧行驶。                |
+| [`GoArcWS`](Methods/GoArcWS)            | 动作：按圆弧行驶。                |
+| [`GoArcWA`](Methods/GoArcWA)            | 动作：按圆弧行驶。                |
+| [`GoArcVT`](Methods/GoArcVT)            | 动作：按圆弧行驶。                |
+| [`GoArcWT`](Methods/GoArcWT)            | 动作：按圆弧行驶。                |
 | [`AdjustRudder`](Methods/AdjustRudder)         | 动作：调整后轮零位。              |
 | [`CancelAction`](Methods/CancelAction)         | 取消动作。                       |
