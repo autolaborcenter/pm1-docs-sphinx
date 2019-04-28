@@ -6,7 +6,7 @@
 - [`Autolabor.PM1.Methods`](Methods)
   - 连接控制
     - [`Autolabor.PM1.Methods.Initialize`](Methods/Initialize)
-    - [`Autolabor.PM1.Methods.ShutDown`](Methods/ShutDown)
+    - [`Autolabor.PM1.Methods.Shutdown`](Methods/Shutdown)
   - 参数访问
     - [`Autolabor.PM1.Methods.Parameters`](Methods/Parameters)
   - 状态访问
@@ -26,7 +26,7 @@
     - [`Autolabor.PM1.Methods.Paused`](Methods/Paused)
     - [`Autolabor.PM1.Methods.CancelAction`](Methods/CancelAction)
   - 高级动作控制
-    - [`Autolabor.PM1.Methods.SpatiumCalculate`](Methods/SpatiumCalculate)
+    - [`Autolabor.PM1.Methods.CalculateSpatium`](Methods/CalculateSpatium)
     - [`Autolabor.PM1.Methods.DriveSpatial`](Methods/DriveSpatial)
     - [`Autolabor.PM1.Methods.DriveTiming`](Methods/DriveTiming)
     - [`Autolabor.PM1.Methods.AdjustRudder`](Methods/AdjustRudder)

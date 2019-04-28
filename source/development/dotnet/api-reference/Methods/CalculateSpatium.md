@@ -1,4 +1,4 @@
-# `Methods.Shutdown` 静态方法
+# `Methods.CalculateSpatium` 静态方法
 
 - 命名空间：`Autolabor.PM1`
 - 源文件：[`Methods.cs`](https://github.com/autolaborcenter/Autolabor.PM1.SDK.Net/blob/master/PM1.SDK.Net/PM1.SDK.Net/Methods.cs)
@@ -6,7 +6,7 @@
 
 ------
 
-关闭。
+计算空间尺度。
 
 ## 本文内容
 
@@ -19,17 +19,19 @@
 ## 定义
 
 ```c#
-public static void Shutdown()
+public static double CalculateSpatium(double spatium, double angle)
 ```
 
 <a name="参数">参数</a>
 
 ## 参数
 
-（无）
+* **`spatium`** - 轨迹弧长
+
+* **`angle`** - 轨迹圆心角
 
 <a name="返回值">返回值</a>
 
 ## 返回值
 
-（无）
+描述运动约束的尺度值。
