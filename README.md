@@ -21,7 +21,7 @@
 2. [安装 `Sphinx` 环境](https://www.sphinx-doc.org/)
 
    ```shell
-pip install -U Sphinx
+   pip install -U Sphinx
    ```
 
 3. [安装 markdown 扩展](https://www.sphinx-doc.org/en/master/usage/markdown.html?highlight=markdown)
