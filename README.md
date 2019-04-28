@@ -24,7 +24,7 @@
    pip install -U Sphinx
    ```
 
-3. 安装 [markdown 扩展](https://www.sphinx-doc.org/en/master/usage/markdown.html?highlight=markdown)
+3. 安装 [`markdown` 扩展](https://www.sphinx-doc.org/en/master/usage/markdown.html?highlight=markdown)
 
    ```shell
    pip install --upgrade recommonmark
