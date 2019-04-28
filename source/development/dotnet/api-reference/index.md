@@ -17,6 +17,8 @@
     - [`Autolabor.PM1.Methods.WheelsTarget`](Methods/WheelsTarget)
     - [`Autolabor.PM1.Methods.VelocityTarget`](Methods/VelocityTarget)
   - 动作控制
+    - [`Autolabor.PM1.Methods.GoStraight`](Methods/GoStraight)
+    - [`Autolabor.PM1.Methods.TurnAround`](Methods/TurnAround)
     - [`Autolabor.PM1.Methods.GoArcVS`](Methods/GoArcVS)
     - [`Autolabor.PM1.Methods.GoArcVA`](Methods/GoArcVA)
     - [`Autolabor.PM1.Methods.GoArcWS`](Methods/GoArcWS)

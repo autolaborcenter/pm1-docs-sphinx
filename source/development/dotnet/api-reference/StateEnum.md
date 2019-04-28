@@ -10,8 +10,10 @@
 
 ## 本文内容
 
-* [定义](#定义)
-* [字段](#字段)
+* <a href="#定义">定义</a>
+* <a href="#字段">字段</a>
+
+<a name="定义"></a>
 
 ## 定义
 
@@ -19,7 +21,9 @@
 public enum StateEnum
 ```
 
-继承关系：`Object` →`ValueType`→`Enum`→ `StateEnum`
+继承关系：`Object` → `ValueType` → `Enum` → `StateEnum`
+
+<a name="字段"></a>
 
 ## 字段
 
