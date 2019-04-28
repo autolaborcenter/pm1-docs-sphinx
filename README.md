@@ -10,21 +10,21 @@
 
 ## 编译
 
-本工程需要 [`Sphinx`](https://www.sphinx-doc.org/) 环境来编译。
+本工程需要 `Sphinx` 环境来编译。
 
 ### 安装 `Sqhinx` 环境
 
-1. [安装 `python` 环境](https://www.python.org/)
+1. 安装 [`python`](https://www.python.org/) 环境（version ≥ 3.5）
 
-   [3.7.3](https://www.python.org/downloads/release/python-373/)
+   在最新版 [3.7.3](https://www.python.org/downloads/release/python-373/) 发布页选择你的平台。
 
-2. [安装 `Sphinx` 环境](https://www.sphinx-doc.org/)
+2. 安装 [`Sphinx`](https://www.sphinx-doc.org/) 环境
 
    ```shell
    pip install -U Sphinx
    ```
 
-3. [安装 markdown 扩展](https://www.sphinx-doc.org/en/master/usage/markdown.html?highlight=markdown)
+3. 安装 [markdown 扩展](https://www.sphinx-doc.org/en/master/usage/markdown.html?highlight=markdown)
 
    ```shell
    pip install --upgrade recommonmark
@@ -47,7 +47,7 @@ git clone https://github.com/autolaborcenter/pm1-doc-sphinx.git
 进入项目文件夹，执行：
 
 ```shell
-.\make.bat html
+.\make html
 ```
 
 编译好的静态网站在 `build/html` 目录下。
