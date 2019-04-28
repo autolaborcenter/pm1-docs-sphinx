@@ -24,18 +24,18 @@
   * [串口驱动](serialport_driver_manual/doc.md)
 
 * 二次开发
-  * 原生C++
+  * 原生（c++）
     * [开发入门](development/native/readme)
-    * [VS项目使用API](vs_tutorial/doc.md)
+    * [visual studio 开发](development/native/vs_tutorial/doc.md)
     * [使用范例](pm1_c++_api_examples/doc.md)
     * [最佳实践](development/native/best-practices)
     * [API 参考](development/native/api-reference/index)
-  * .Net
+  * .Net（c#）
     * [开发入门](development/dotnet/readme)
     * [使用范例](pm1_c#_api_examples/doc.md)
     * [最佳实践](development/dotnet/best-practices)
     * [API 参考](development/dotnet/api-reference/index)
-  * [ROS](development/ros/readme)
+  * [ROS（c++）](development/ros/readme)
 
 
 
