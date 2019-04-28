@@ -33,9 +33,9 @@ public static class Methods
 | [`Parameters`](Methods/Parameters)         | 获取参数索引器。          |
 | [`Odometry`](Methods/Odometry)             | 获取里程计读数。          |
 | [`State`](Methods/State)           | 获取或设置底盘工作状态。   |
-| [`PhysicalTarget`](Methods/PhysicalTarget) | 设置物理模型下的目标速度。 |
-| [`WheelsTarget`](Methods/WheelsTarget)     | 设置差动模型下的目标速度。 |
-| [`VelocityTarget`](Methods/VelocityTarget) | 设置运动模型下的目标速度。 |
+| [`PhysicalTarget`](Methods/PhysicalTarget) | 设置物理模型下的目标运动状态。 |
+| [`WheelsTarget`](Methods/WheelsTarget)     | 设置差动模型下的目标运动状态。 |
+| [`VelocityTarget`](Methods/VelocityTarget) | 设置运动模型下的目标运动状态。 |
 | [`Paused`](Methods/Paused)                 | 查询、设置或解除暂停。     |
 
 <a name="方法"></a>
