@@ -2,9 +2,9 @@
 
 ## 3.1 底盘连接
 
-将PM1的串口线插入笔记本电脑或工控机，打开底盘电源和急停开关
+将 PM1 的串口线插入笔记本电脑或工控机，打开底盘电源和急停开关
 
-打开Terminal输入
+打开 Terminal 输入
 
 ```
 ll /dev/ttyUSB*
@@ -35,7 +35,7 @@ catkin_make
 source devel/setup.bash
 ```
 
-修改launch文件参数
+修改 launch 文件参数
 
 ```
 gedit src/autolabor_canbus_driver/launch/driver.launch
@@ -47,9 +47,9 @@ gedit src/autolabor_canbus_driver/launch/driver.launch
 <param name="port_name" value="/dev/ttyUSB0" />
 ```
 
-将value值改为之前查看的车底盘的设备节点名，修改后保存并关闭
+将 value 值改为之前查看的车底盘的设备节点名，修改后保存并关闭
 
-执行launch文件
+执行 launch 文件
 
 ```
 roslaunch autolabor_canbus_driver driver.launch
@@ -59,9 +59,9 @@ roslaunch autolabor_canbus_driver driver.launch
 
 ## 3.3 控制原地转
 
-打开一个terminal
+打开一个 terminal
 
-执行 rostopic list 查看有无/cmd_vel 话题
+执行 rostopic list 查看有无 /cmd_vel 话题
 
 如果有的话，执行：
 
@@ -69,4 +69,4 @@ roslaunch autolabor_canbus_driver driver.launch
  rostopic pub -r 10 /cmd_vel geometry_msgs/Twist -- '[0.0,0.0,0.0]' '[0.0,0.0,1]'
 ```
 
-此时车轮会开始转动，如果想要停止的话，必须在执行命令的terminal中执行Ctrl+C，停止发送。
+此时车轮会开始转动，如果想要停止的话，必须在执行命令的 terminal 中执行 Ctrl+C，停止发送。
