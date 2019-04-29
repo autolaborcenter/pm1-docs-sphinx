@@ -2,7 +2,7 @@
 
 1. 创建一个 C++ 空项目（以 VS2017 为例）
 
-   打开VS，依次点击菜单“文件”->“新建”->“项目”，弹出新建项目窗口。在新建项目窗口中选择“Visual C++”->“其他”->“空项目”创建项目，如下图所示。
+   打开 VS，依次点击菜单“文件”->“新建”->“项目”，弹出新建项目窗口。在新建项目窗口中选择 “Visual C++” -> “其他” -> “空项目” 创建项目，如下图所示。
 
    **注意！**如果找不到此项目类型，请检查 VS 中是否已经安装 C++。
 
@@ -45,7 +45,7 @@
    	{
    	    std::cout << "connected to " << result.value << std::endl;
    	    unlock();                   // 解锁
-   	    while (get_chassis_state().value != chassis_state::unlocked)
+   	    while (check_state() != chassis_state::unlocked)
    	    {
    	        delay(0.1);
    	    }
