@@ -26,9 +26,9 @@ public static double CalculateSpatium(double spatium, double angle)
 
 ## 参数
 
-* **`spatium`** - 轨迹弧长
+* **`spatium`** - 轨迹弧长（米）
 
-* **`angle`** - 轨迹圆心角
+* **`angle`** - 轨迹圆心角（弧度）
 
 <a name="返回值">返回值</a>
 

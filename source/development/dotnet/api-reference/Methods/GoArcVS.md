@@ -1,4 +1,4 @@
-# `Methods.` 静态方法
+# `Methods.GoArcVS` 静态方法
 
 - 命名空间：`Autolabor.PM1`
 - 源文件：[`Methods.cs`](https://github.com/autolaborcenter/Autolabor.PM1.SDK.Net/blob/master/PM1.SDK.Net/PM1.SDK.Net/Methods.cs)
@@ -6,7 +6,7 @@
 
 ------
 
-> TODO
+动作：按圆弧行驶。
 
 ## 本文内容
 
@@ -19,14 +19,20 @@
 ## 定义
 
 ```c#
-TODO
+public static void GoArcVS(double v, double r, double s, out double progress)
 ```
 
 <a name="参数"></a>
 
 ## 参数
 
-> TODO
+* **`v`** - 线速度（米/秒）
+
+* **`r`** - 转弯半径（米）
+
+* **`s`** - 轨迹弧长（米）
+
+* **`progress`** - 进度
 
 <a name="返回值"></a>
 

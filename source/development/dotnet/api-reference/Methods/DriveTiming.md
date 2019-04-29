@@ -1,4 +1,4 @@
-# `Methods.` 静态方法
+# `Methods.DriveTiming` 静态方法
 
 - 命名空间：`Autolabor.PM1`
 - 源文件：[`Methods.cs`](https://github.com/autolaborcenter/Autolabor.PM1.SDK.Net/blob/master/PM1.SDK.Net/PM1.SDK.Net/Methods.cs)
@@ -6,7 +6,7 @@
 
 ------
 
-> TODO
+控制机器人执行受时间约束的指定动作。
 
 ## 本文内容
 
@@ -19,14 +19,20 @@
 ## 定义
 
 ```c#
-TODO
+public static void DriveTiming(double v, double w, double time, out double progress)
 ```
 
 <a name="参数"></a>
 
 ## 参数
 
-> TODO
+* **`v`** - 线速度（米/秒）
+
+* **`w`** - 角速度（弧度/秒）
+
+* **`time`** - 时间约束（秒）
+
+* **`progress`** - 进度
 
 <a name="返回值"></a>
 
