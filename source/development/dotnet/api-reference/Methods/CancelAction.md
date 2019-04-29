@@ -1,4 +1,4 @@
-# `Methods.` 静态方法
+# `Methods.CancelAction` 静态方法
 
 - 命名空间：`Autolabor.PM1`
 - 源文件：[`Methods.cs`](https://github.com/autolaborcenter/Autolabor.PM1.SDK.Net/blob/master/PM1.SDK.Net/PM1.SDK.Net/Methods.cs)
@@ -6,7 +6,7 @@
 
 ------
 
-> TODO
+取消动作。
 
 ## 本文内容
 
@@ -19,14 +19,14 @@
 ## 定义
 
 ```c#
-TODO
+public static void CancelAction()
 ```
 
 <a name="参数"></a>
 
 ## 参数
 
-> TODO
+ （无）
 
 <a name="返回值"></a>
 
