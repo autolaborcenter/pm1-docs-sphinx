@@ -3,7 +3,7 @@
 - [`Autolabor.PM1.Parameter`](Parameter)
 - [`Autolabor.PM1.Parameters`](Parameters)
 - [`Autolabor.PM1.StateEnum`](StateEnum)
-- [`Autolabor.PM1.Methods`](Methods)
+- [`Autolabor.PM1.Methods`](Methods-Class)
   - 连接控制
     - [`Autolabor.PM1.Methods.Initialize`](Methods/Initialize)
     - [`Autolabor.PM1.Methods.Shutdown`](Methods/Shutdown)
