@@ -12,6 +12,7 @@
   - 状态访问
     - [`Autolabor.PM1.Methods.State`](Methods/State)
     - [`Autolabor.PM1.Methods.Odometry`](Methods/Odometry)
+    - [`Autolabor.PM1.Methods.ResetOdometry`](Methods/ResetOdometry)
   - 连续控制
     - [`Autolabor.PM1.Methods.PhysicalTarget`](Methods/PhysicalTarget)
     - [`Autolabor.PM1.Methods.WheelsTarget`](Methods/WheelsTarget)
