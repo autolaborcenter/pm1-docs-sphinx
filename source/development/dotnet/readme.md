@@ -1,4 +1,4 @@
-# Autolabor PM1 .Net 应用程序开发指南
+# PM1 .Net 应用程序开发指南
 
 ## 介绍
 
@@ -29,3 +29,12 @@
 
 Native SDK 的每一个函数都在 SDK 中存在对应版本，但可能以更 C# 的方式实现（如用*设值器*、*取值器*替代 `get_xxx()`、`set_xxx()` 函数）。由于 C# 不支持顶层函数，这些函数位于一个 [`Methods` 静态类](api-reference/Methods-Class)中。
 
+## .Net 非阻塞多任务
+
+对动作等阻塞操作，使用协程异步可获得更好的开发体验。
+
+> 有关基于协程的并行，参见[任务并行库的文档](https://docs.microsoft.com/zh-cn/dotnet/standard/parallel-programming/task-parallel-library-tpl)。
+
+我们现在提供三个异步函数，对应耗时的初始化和两类*动作*。
+
+> 参见 [API 参考](api-reference/AsyncMethods-Class)。

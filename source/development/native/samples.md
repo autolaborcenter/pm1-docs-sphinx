@@ -1,4 +1,4 @@
-# PM1 C++ API 例程
+# PM1 原生 API 使用范例
 
 * 在 Visual Studio 环境下使用 C++ API 开发
   * [了解如何获取并配置库文件](vs_tutorial/doc)

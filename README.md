@@ -14,7 +14,7 @@
 
 ### 安装 `Sqhinx` 环境
 
-1. 安装 [`python`](https://www.python.org/) 环境（version ≥ 3.5）
+1. 安装 [python](https://www.python.org/) 环境（version ≥ 3.5）
 
    在最新版 [3.7.3](https://www.python.org/downloads/release/python-373/) 发布页选择你的平台。
 
@@ -24,7 +24,7 @@
    pip install -U Sphinx
    ```
 
-3. 安装 [`markdown` 扩展](https://www.sphinx-doc.org/en/master/usage/markdown.html?highlight=markdown)
+3. 安装 [markdown 扩展](https://www.sphinx-doc.org/en/master/usage/markdown.html?highlight=markdown)
 
    ```shell
    pip install --upgrade recommonmark
@@ -34,6 +34,12 @@
 
    ```shell
    pip install --upgrade sphinx-markdown-tables
+   ```
+
+5. 安装 `sphinx_rtd_theme` 主题
+
+   ```shell
+   pip install sphinx_rtd_theme
    ```
 
 ### 克隆项目
