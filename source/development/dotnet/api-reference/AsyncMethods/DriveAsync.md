@@ -35,7 +35,7 @@ public static async Task DriveAsync(
 
 * **`w`** - 角速度（弧度/秒）
 
-* **`spatium`** - 空间约束（参见 [`CalculateSpatium`](CalculateSpatium)）
+* **`spatium`** - 空间约束（参见 [`CalculateSpatium`](../Methods/CalculateSpatium)）
 
 * **`progress`** - 进度报告回调
 
