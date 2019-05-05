@@ -4,7 +4,7 @@
 .. toctree::
    :maxdepth: 1
 
-quick_start_tutorial/doc
+   quick_start_tutorial/doc
 
 了解 Autolabor PM1
 ------------------
