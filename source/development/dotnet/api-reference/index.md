@@ -33,4 +33,5 @@
     - [`Autolabor.PM1.Methods.DriveSpatial`](Methods/DriveSpatial)
     - [`Autolabor.PM1.Methods.DriveTiming`](Methods/DriveTiming)
     - [`Autolabor.PM1.Methods.AdjustRudder`](Methods/AdjustRudder)
-- [`Autolabor.PM1.AsyncMethods`](AsyncMethods)
+- [`Autolabor.PM1.AsyncMethods`](AsyncMethods-Class)
+

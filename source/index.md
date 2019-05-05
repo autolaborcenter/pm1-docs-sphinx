@@ -14,7 +14,6 @@
 * 二次开发
   * [原生（c++）](development/native/readme)
     * [使用范例](development/native/samples)
-    * [最佳实践](development/native/best-practices)
     * [API 参考](development/native/api-reference/index)
   * [.Net（c#）](development/dotnet/readme)
     * [使用范例](development/dotnet/samples)
