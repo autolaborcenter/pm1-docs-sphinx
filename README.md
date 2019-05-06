@@ -53,7 +53,8 @@ git clone https://github.com/autolaborcenter/pm1-doc-sphinx.git
 进入项目文件夹，执行：
 
 ```shell
-.\make html
+sphinx-build -M html source build
 ```
 
 编译好的静态网站在 `build/html` 目录下。
+
