@@ -24,23 +24,17 @@
    pip install -U Sphinx
    ```
 
-3. 安装 [markdown 扩展](https://www.sphinx-doc.org/en/master/usage/markdown.html?highlight=markdown)
+3. 安装 `Sphinx` 扩展
 
    ```shell
-   pip install --upgrade recommonmark
+   pip install --upgrade recommonmark sphinx-markdown-tables sphinx_rtd_theme
    ```
 
-4. 安装 markdown 表格支持
+   * `recommonmark` - [markdown 支持](https://www.sphinx-doc.org/en/master/usage/markdown.html?highlight=markdown)
+   * `sphinx-markdown-tables` - markdown 表格支持
+   * `sphinx_rtd_theme` - sphinx_rtd_theme 主题
 
-   ```shell
-   pip install --upgrade sphinx-markdown-tables
-   ```
 
-5. 安装 `sphinx_rtd_theme` 主题
-
-   ```shell
-   pip install sphinx_rtd_theme
-   ```
 
 ### 克隆项目
 
