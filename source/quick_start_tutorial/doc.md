@@ -25,7 +25,7 @@
 5. 参考下图的手柄按键定义控制 PM1 运动
 6. 更多详细信息请参考 [手柄遥控指南](../user-guide/using-controller)。
 
-![手柄按键示意图](imgs/joystick_define.png)
+![](imgs/joystick_define.png)
 
 <a name="PM1 Starter 软件控制"></a>
 
@@ -41,29 +41,26 @@
 
    打开 PM1 Starter，串口默认自动选择，点击 `连接` 按钮开始连接 PM1，如下图所示。
 
-   ![connect](imgs/connect.png)
+   ![](imgs/connect.png)
 
-   成功连接 PM1 之后，连接提示信息会显示 `已连接到PM1`，右侧 PM1 状态图标会显示锁定或者解锁图标，如下图所示。如果状态图标显示的是锁定![lock](imgs/state_lock.png)，需要点击该图标解锁，解锁完成后图标变为解锁图标![unlock](imgs/state_unlock.png)。
+   成功连接 PM1 之后，连接提示信息会显示 `已连接到PM1`，右侧 PM1 状态图标会显示锁定或者解锁图标，如下图所示。如果状态图标显示的是锁定![](imgs/state_lock.png)，需要点击该图标解锁，解锁完成后图标变为解锁图标![](imgs/state_unlock.png)。
 
 3. 执行动作
 
    确保 PM1 前方有至少 1m 的可行驶区域，动作类型与参数保持默认，点击 `执行` 按钮开始以 0.1m/s 的速度向前直行 1m，如下图所示。
 
-   ![execute](imgs/connected_execute.png)
+   ![](imgs/connected_execute.png)
 
    动作执行过程中可以通过点击 `暂停` 按钮暂停执行（快捷键空格），或者点击 `终止` 按钮终止执行（快捷键 Esc）。左下角显示里程计信息，点击 `清零` 可重置里程计。如下图所示。
 
-   ![executing](imgs/executing.png)
+   ![](imgs/executing.png)
 
 4. 摇杆控制
 
    点击左侧 `连续控制模式` 标签切换到摇杆控制模式。鼠标左键按住摇杆中心白色圆圈向不同区域拖动实现对应的控制。摇杆界面如下图所示。
 
-   ![joystick](imgs/joystick.png)
+   ![](imgs/joystick.png)
 
 5. 了解更多
 
     更多详细信息请参考 [PM1 Starter 用户手册](../user-guide/using-pm1-starter/doc)。
-
-<a name="浏览二次开发示例"></a>
-
