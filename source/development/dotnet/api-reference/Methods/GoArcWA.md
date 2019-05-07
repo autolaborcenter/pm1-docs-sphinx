@@ -13,6 +13,7 @@
 - <a href="#定义">定义</a>
 - <a href="#参数">参数</a>
 - <a href="#返回值">返回值</a>
+- <a href="#参考">参考</a>
 
 <a name="定义"></a>
 
@@ -39,3 +40,9 @@ public static void GoArcWA(double w, double r, double a, out double progress)
 ## 返回值
 
 （无）
+
+<a name="参考"></a>
+
+### 参考
+
+阅读[控制机器人行驶](../../../concepts/drive)了解控制方式。

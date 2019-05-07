@@ -27,3 +27,7 @@ autolabor::pm1::drive_spatial(
 # 返回值
 
 若失败，`result.error_info` 保存错误信息。
+
+# 参考
+
+阅读[控制机器人行驶](../../concepts/drive)了解控制方式。

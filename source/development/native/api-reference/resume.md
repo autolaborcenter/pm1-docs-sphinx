@@ -20,3 +20,7 @@ autolabor::pm1::resume();
 # 返回值
 
 （无）
+
+# 参考
+
+阅读[控制机器人行驶](../../concepts/drive)了解控制方式。
