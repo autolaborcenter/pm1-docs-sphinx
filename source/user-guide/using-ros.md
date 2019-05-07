@@ -1,4 +1,4 @@
-﻿# 使用 ROS
+# 使用 ROS
 
 ## 底盘连接
 
@@ -22,6 +22,12 @@ cd ~/github_ws
 git clone https://github.com/autolaborcenter/pm1_driver_ros.git
 ```
 
+加载系统ROS环境变量
+
+```
+source /opt/ros/kinetic/setup.bash
+```
+
 编译源码
 
 ```
@@ -29,7 +35,7 @@ cd pm1_driver_ros/
 catkin_make
 ```
 
-加载环境变量
+加载工作空间ROS环境变量
 
 ```
 source devel/setup.bash
@@ -41,7 +47,7 @@ source devel/setup.bash
 gedit src/autolabor_canbus_driver/launch/driver.launch
 ```
 
-定位
+找到
 
 ```
 <param name="port_name" value="/dev/ttyUSB0" />
