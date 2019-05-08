@@ -1,10 +1,17 @@
 # PM1 Starter 使用说明
 
+
+---
+
 ## 软件概述
 
 本软件为 PM1 产品的移动功能演示工具，包含动作控制与连续控制两种模式。
 
 软件与 PM1 成功连接之后，可以控制车辆进行直行、转弯以及原地转向动作，也可以使用虚拟摇杆或键盘方向键对车辆进行连续控制。
+
+软件开源，可[下载](https://github.com/autolaborcenter/pm1_demo/releases)或[查看源码](https://github.com/autolaborcenter/pm1_demo/releases)。
+
+运行环境：仅支持 Windows，Win7 或以上。
 
 软件主界面如下图所示：
 
@@ -31,12 +38,6 @@
 10. 动作执行进度指示
 
 11. 终止动作
-
-运行环境：Windows 7 及以上
-
-下载地址：https://github.com/autolaborcenter/pm1_demo/releases
-
-源码地址：https://github.com/autolaborcenter/pm1_demo/releases
 
 ## 连接 PM1
 
