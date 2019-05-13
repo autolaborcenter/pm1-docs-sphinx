@@ -16,11 +16,11 @@
 
 ## 无线手柄控制
 
-对，下面是个gif动图：
+对，下面是个 gif 动图：
 
 ![](imgs/joystick_define.gif)
 
-更多详细信息请参考[手柄遥控指南](../user-guide/using-controller)
+> 更多详细信息请参考[手柄遥控指南](../user-guide/using-controller)。
 
 <a name="PM1 Starter 软件控制"></a>
 
@@ -56,6 +56,4 @@
 
    ![](imgs/joystick.png)
 
-5. 了解更多
-
-    更多详细信息请参考 [PM1 Starter 用户手册](../user-guide/using-pm1-starter/doc)。
+> 更多详细信息请参考 [PM1 Starter 用户手册](../user-guide/using-pm1-starter/doc)。
