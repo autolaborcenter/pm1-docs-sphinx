@@ -5,7 +5,7 @@
 ---
 
 ```c++
-autolabor::pm1::result<std::string> 
+autolabor::pm1::result<std::string>
 autolabor::pm1::initialize(
     const std::string &port = "",
     double *progress = nullptr
@@ -33,7 +33,11 @@ autolabor::pm1::initialize(
 
 # 注意
 
-若参数 `port` 为空，将读取并遍历计算机上连接的串口，逐一尝试打开，并通过握手协议确定是否为机器人底盘。一旦找到机器人底盘，函数立即返回。**对于非 PM1 机器人底盘的设备，发送握手协议可能导致任何意想不到的后果，包括但不限于处罚动作，导致异常状态甚至造成设备重置或损毁。**因此，建议只在确定安全性的环境中使用此功能，常见的适用场景是只连接到 PM1 底盘这 1 个串口设备的计算机。否则应该传入一个串口名字。
+当计算机只唯一连接到 PM1 底盘这 1 个串口设备，参数 `port` 可默认为空，否则请传入一个串口名字。
+
+若参数 `port` 为空，将读取并遍历计算机上连接的串口，逐一尝试打开，并通过握手协议确定是否为机器人底盘。一旦找到机器人底盘，函数立即返回。
+
+**对于非 PM1 机器人底盘的设备，发送握手协议可能导致任何意想不到的后果，包括但不限于触发动作、导致异常状态甚至造成设备重置或损毁。**
 
 每一次失败的尝试需要 500ms。
 
@@ -47,7 +51,7 @@ autolabor::pm1::initialize(
 
 int main() {
 	using namespace autolabor::pm1;
-	
+
 	auto result = initialize();
 	if (result)
 		std::cout << "connected to " << result.value
