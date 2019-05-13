@@ -16,16 +16,11 @@
 
 ## 无线手柄控制
 
-使用手柄控制 PM1 运动，请按如下步骤操作
+看图：
 
-1. 确保 PM1 电量充足，打开 PM1 开关，确认急停按钮释放
-2. 按下手柄上的 LOGO 按钮，等待手柄两个红色LED为常亮状态，表示已经连接到 PM1
-3. 同时按住【LT】【RT】【start】三个按键或【LB】【RB】【start】三个键解锁 PM1
-4. 左手模式：按住手柄上方的【LB】或【LT】将使用左方向键和左摇杆控制；右手模式：按住【LT】或【RT】将使用右摇杆控制
-5. 参考下图的手柄按键定义控制 PM1 运动
-6. 更多详细信息请参考[手柄遥控指南](../user-guide/using-controller)
+![](imgs/joystick_define.gif)
 
-![](imgs/joystick_define.png)
+更多详细信息请参考[手柄遥控指南](../user-guide/using-controller)
 
 <a name="PM1 Starter 软件控制"></a>
 
