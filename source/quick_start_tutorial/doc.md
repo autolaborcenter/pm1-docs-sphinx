@@ -16,7 +16,7 @@
 
 ## 无线手柄控制
 
-看图：
+对，下面是个gif动图：
 
 ![](imgs/joystick_define.gif)
 
