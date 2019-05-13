@@ -13,6 +13,7 @@
    :maxdepth: 1
 
    introduction/parameters
+   introduction/notice
    introduction/services-and-supports
 
 开始使用
