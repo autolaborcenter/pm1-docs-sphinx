@@ -1,0 +1,279 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>约定 &mdash; Autolabor PM1  文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../../../genindex.html" />
+    <link rel="search" title="搜索" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> Autolabor PM1
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../quick_start_tutorial/doc.html">PM1 快速入门指南</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../introduction/parameters.html">性能参数</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../introduction/notice.html">安全须知</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../introduction/services-and-supports.html">服务与支持</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../user-guide/using-controller.html">使用手柄遥控</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../user-guide/using-pm1-starter/doc.html">PM1 Starter 使用说明</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../user-guide/using-ros.html">使用 ROS</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../readme.html">PM1 原生应用程序开发指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../samples.html">PM1 原生 API 使用范例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">PM1 原生 API 参考</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../dotnet/readme.html">PM1 .Net 应用程序开发指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dotnet/samples.html">PM1 .Net API 使用范例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dotnet/api-reference/index.html">PM1 .Net API 参考</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ros/readme.html">Autolabor ROS 驱动模块</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Autolabor PM1</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>约定</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/development/native/api-reference/API-design.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>约定<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<ul class="simple">
+<li><p>参数</p></li>
+</ul>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>参数类型</th>
+<th>单位</th>
+<th>取值范围</th>
+<th>正方向</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>线速度</em></td>
+<td>m/s</td>
+<td>实数</td>
+<td>前</td>
+</tr>
+<tr>
+<td><em>角速度</em></td>
+<td>rad/s</td>
+<td>实数</td>
+<td>逆时针</td>
+</tr>
+<tr>
+<td><em>轨迹弧长</em></td>
+<td>m</td>
+<td>非负实数</td>
+<td>-</td>
+</tr>
+<tr>
+<td><em>轨迹圆心角</em></td>
+<td>rad</td>
+<td>非负实数</td>
+<td>-</td>
+</tr>
+<tr>
+<td><em>转弯半径</em></td>
+<td>m</td>
+<td>实数</td>
+<td>逆时针</td>
+</tr>
+<tr>
+<td><em>时间段</em></td>
+<td>s</td>
+<td>非负实数</td>
+<td>-</td>
+</tr>
+</tbody>
+</table><ul class="simple">
+<li><p>坐标系</p>
+<ul>
+<li><p>所有坐标系为右手性的平面直角坐标系；</p></li>
+<li><p>机器人初始化后或里程计清零后，认为机器人坐标系和里程计坐标系重合；</p></li>
+<li><p>机器人坐标系 X 轴正方向向机器人前方，Y 轴正方向向机器人左方；</p></li>
+</ul>
+</li>
+<li><p>调用顺序</p>
+<ul>
+<li><p>如无特殊说明，函数需要在初始化之后、断开连接之前调用；</p></li>
+</ul>
+</li>
+</ul>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Autolabor
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

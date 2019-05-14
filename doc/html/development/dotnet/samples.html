@@ -1,0 +1,301 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>PM1 .Net API 使用范例 &mdash; Autolabor PM1  文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="PM1 .Net API 参考" href="api-reference/index.html" />
+    <link rel="prev" title="PM1 .Net 应用程序开发指南" href="readme.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Autolabor PM1
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../quick_start_tutorial/doc.html">PM1 快速入门指南</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/parameters.html">性能参数</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/notice.html">安全须知</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/services-and-supports.html">服务与支持</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../user-guide/using-controller.html">使用手柄遥控</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user-guide/using-pm1-starter/doc.html">PM1 Starter 使用说明</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user-guide/using-ros.html">使用 ROS</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../native/readme.html">PM1 原生应用程序开发指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../native/samples.html">PM1 原生 API 使用范例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../native/api-reference/index.html">PM1 原生 API 参考</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="readme.html">PM1 .Net 应用程序开发指南</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">PM1 .Net API 使用范例</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#visual-studio-c-api">在 Visual Studio 环境下使用 C# API 开发</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#initialization-net">初始化示例（Initialization.Net）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#actioncontrol-net">动作控制示例（ActionControl.Net）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#continuouscontrol-net">连续控制示例（ContinuousControl.Net）</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api-reference/index.html">PM1 .Net API 参考</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ros/readme.html">Autolabor ROS 驱动模块</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Autolabor PM1</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>PM1 .Net API 使用范例</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/development/dotnet/samples.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="pm1-net-api">
+<h1>PM1 .Net API 使用范例<a class="headerlink" href="#pm1-net-api" title="永久链接至标题">¶</a></h1>
+<div class="section" id="visual-studio-c-api">
+<h2>在 Visual Studio 环境下使用 C# API 开发<a class="headerlink" href="#visual-studio-c-api" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p>.Net DLL (<a class="reference external" href="#">PM1.SDK.Net.dll</a>)</p></li>
+<li><p>Native DLL (<a class="reference external" href="https://github.com/autolaborcenter/pm1_sdk/releases">pm1_sdk_native_debug.dll、pm1_sdk_native.dll</a>)</p></li>
+</ul>
+<blockquote>
+<div><p>注意：程序运行时还需要将 native DLL 文件拷贝至运行目录下。</p>
+</div></blockquote>
+</div>
+<div class="section" id="initialization-net">
+<h2>初始化示例（Initialization.Net）<a class="headerlink" href="#initialization-net" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p>概念</p>
+<ul>
+<li><p><a href="api-reference/Methods/Initialize.html#注意">初始化</a></p></li>
+</ul>
+</li>
+<li><p>API</p>
+<ul>
+<li><p>初始化与 PM1 连接 （<a class="reference internal" href="api-reference/Methods/Initialize.html"><span class="doc">Methods.Initialize</span></a>）</p></li>
+<li><p>读取底盘状态、解锁底盘 （<a class="reference internal" href="api-reference/Methods/State.html"><span class="doc">Methods.State</span></a>）</p></li>
+<li><p>控制 PM1 以0.25rad/s 的速度原地转90° （<a class="reference internal" href="api-reference/Methods/TurnAround.html"><span class="doc">Methods.TurnAround</span></a>）</p></li>
+<li><p>断开连接 （<a class="reference internal" href="api-reference/Methods/ShutdownSafety.html"><span class="doc">Methods.ShutdownSafety</span></a>）</p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://github.com/autolaborcenter/PM1.SDK.Net.Samples">代码</a></p></li>
+</ul>
+</div>
+<div class="section" id="actioncontrol-net">
+<h2>动作控制示例（ActionControl.Net）<a class="headerlink" href="#actioncontrol-net" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p>概念</p>
+<ul>
+<li><p><a href="../concepts/drive.html#动作">动作控制</a></p></li>
+</ul>
+</li>
+<li><p>API</p>
+<ul>
+<li><p>初始化与 PM1 连接 （<a class="reference internal" href="api-reference/Methods/Initialize.html"><span class="doc">Methods.Initialize</span></a>）</p></li>
+<li><p>读取底盘状态 （<a class="reference internal" href="api-reference/Methods/State.html"><span class="doc">Methods.State</span></a>）</p></li>
+<li><p>根据指令锁定/解锁底盘（<a class="reference internal" href="api-reference/Methods/State.html"><span class="doc">Methods.State</span></a>）</p></li>
+<li><p>根据指令执行相应动作（<a class="reference internal" href="api-reference/Methods/GoStraight.html"><span class="doc">Methods.GoStraight</span></a>、<a class="reference internal" href="api-reference/Methods/GoArcVA.html"><span class="doc">Methods.GoArcVA</span></a>、<a class="reference internal" href="api-reference/Methods/TurnAround.html"><span class="doc">Methods.TurnAround</span></a>）</p></li>
+<li><p>Esc键终止正在执行的动作（<a class="reference internal" href="api-reference/Methods/CancelAction.html"><span class="doc">Methods.CancelAction</span></a>）</p></li>
+<li><p>断开连接 （<a class="reference internal" href="api-reference/Methods/ShutdownSafety.html"><span class="doc">Methods.ShutdownSafety</span></a>）</p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://github.com/autolaborcenter/PM1.SDK.Net.Samples">代码</a></p></li>
+</ul>
+</div>
+<div class="section" id="continuouscontrol-net">
+<h2>连续控制示例（ContinuousControl.Net）<a class="headerlink" href="#continuouscontrol-net" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p>概念</p>
+<ul>
+<li><p><a href="../concepts/drive.html#指令">连续控制</a></p></li>
+</ul>
+</li>
+<li><p>API</p>
+<ul>
+<li><p>初始化与 PM1 连接 （<a class="reference internal" href="api-reference/Methods/Initialize.html"><span class="doc">Methods.Initialize</span></a>）</p></li>
+<li><p>读取底盘状态、解锁底盘 （<a class="reference internal" href="api-reference/Methods/State.html"><span class="doc">Methods.State</span></a>）</p></li>
+<li><p>方向键控制 PM1 运动（<a class="reference internal" href="api-reference/Methods/VelocityTarget.html"><span class="doc">Methods.VelocityTarget</span></a>）</p></li>
+<li><p>断开连接 （<a class="reference internal" href="api-reference/Methods/ShutdownSafety.html"><span class="doc">Methods.ShutdownSafety</span></a>）</p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://github.com/autolaborcenter/PM1.SDK.Net.Samples">代码</a></p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="api-reference/index.html" class="btn btn-neutral float-right" title="PM1 .Net API 参考" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="readme.html" class="btn btn-neutral float-left" title="PM1 .Net 应用程序开发指南" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Autolabor
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

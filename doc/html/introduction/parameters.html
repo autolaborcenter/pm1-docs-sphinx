@@ -1,0 +1,297 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>性能参数 &mdash; Autolabor PM1  文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="安全须知" href="notice.html" />
+    <link rel="prev" title="PM1 快速入门指南" href="../quick_start_tutorial/doc.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Autolabor PM1
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../quick_start_tutorial/doc.html">PM1 快速入门指南</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">性能参数</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notice.html">安全须知</a></li>
+<li class="toctree-l1"><a class="reference internal" href="services-and-supports.html">服务与支持</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/using-controller.html">使用手柄遥控</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/using-pm1-starter/doc.html">PM1 Starter 使用说明</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/using-ros.html">使用 ROS</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../development/native/readme.html">PM1 原生应用程序开发指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development/native/samples.html">PM1 原生 API 使用范例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development/native/api-reference/index.html">PM1 原生 API 参考</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../development/dotnet/readme.html">PM1 .Net 应用程序开发指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development/dotnet/samples.html">PM1 .Net API 使用范例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development/dotnet/api-reference/index.html">PM1 .Net API 参考</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../development/ros/readme.html">Autolabor ROS 驱动模块</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Autolabor PM1</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>性能参数</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/introduction/parameters.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>性能参数<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="left">项目</th>
+<th align="left">数值</th>
+<th align="left">项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">尺寸</td>
+<td align="left"></td>
+<td align="left">重量</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">最大线速度</td>
+<td align="left">1m/s</td>
+<td align="left">最大角速度</td>
+<td>5rad/s</td>
+</tr>
+<tr>
+<td align="left">适用地形</td>
+<td align="left">水泥、瓷砖、沥青、土地、草地</td>
+<td align="left">结构</td>
+<td>三轮（2 × 驱动轮 + 1 × 转向轮）</td>
+</tr>
+<tr>
+<td align="left">驱动方式</td>
+<td align="left">两轮差动</td>
+<td align="left">转向轮控制</td>
+<td>主动</td>
+</tr>
+<tr>
+<td align="left">垂直越障能力</td>
+<td align="left">8cm</td>
+<td align="left">爬坡能力</td>
+<td>30°</td>
+</tr>
+<tr>
+<td align="left">电池规格</td>
+<td align="left">2 × 12V 铅酸蓄电池</td>
+<td align="left">电池容量</td>
+<td>24V × 12AH</td>
+</tr>
+<tr>
+<td align="left">最大充电功率</td>
+<td align="left">65W</td>
+<td align="left">电量统计方式</td>
+<td>高精度库仑计</td>
+</tr>
+<tr>
+<td align="left">控制方式</td>
+<td align="left">手柄（2.4GHz 无线）/串口（RS232/DB9）</td>
+<td align="left">内部通信方案</td>
+<td>CAN</td>
+</tr>
+<tr>
+<td align="left">遥控距离</td>
+<td align="left">10m（空旷处）</td>
+<td align="left">闭环控制频率</td>
+<td>50Hz</td>
+</tr>
+<tr>
+<td align="left">编码器精度</td>
+<td align="left">400 线 × 4 倍频 = 1600 脉冲</td>
+<td align="left">编码器分辨率</td>
+<td>360° / 1600 = 0.225°</td>
+</tr>
+</tbody>
+</table></div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="notice.html" class="btn btn-neutral float-right" title="安全须知" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../quick_start_tutorial/doc.html" class="btn btn-neutral float-left" title="PM1 快速入门指南" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Autolabor
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

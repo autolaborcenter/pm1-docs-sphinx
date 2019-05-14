@@ -1,0 +1,415 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Autolabor ROS 驱动模块 &mdash; Autolabor PM1  文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="prev" title="PM1 .Net API 参考" href="../dotnet/api-reference/index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Autolabor PM1
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../quick_start_tutorial/doc.html">PM1 快速入门指南</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/parameters.html">性能参数</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/notice.html">安全须知</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/services-and-supports.html">服务与支持</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../user-guide/using-controller.html">使用手柄遥控</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user-guide/using-pm1-starter/doc.html">PM1 Starter 使用说明</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user-guide/using-ros.html">使用 ROS</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../native/readme.html">PM1 原生应用程序开发指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../native/samples.html">PM1 原生 API 使用范例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../native/api-reference/index.html">PM1 原生 API 参考</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../dotnet/readme.html">PM1 .Net 应用程序开发指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dotnet/samples.html">PM1 .Net API 使用范例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dotnet/api-reference/index.html">PM1 .Net API 参考</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Autolabor ROS 驱动模块</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">1. 介绍</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">特性</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">2. 节点</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#canbus-driver">2.1 canbus_driver</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id4">2.1.1 订阅话题</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id5">2.1.2 发布话题</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id6">2.1.3 服务</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id7">2.1.4 参数</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#pm1-driver">2.2 pm1_driver</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id8">2.2.1 订阅话题</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id9">2.2.2 发布话题</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id10">2.2.3 服务</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id11">2.2.4 参数</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tf">2.2.5 TF转换信息</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Autolabor PM1</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Autolabor ROS 驱动模块</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/development/ros/readme.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="autolabor-ros">
+<h1>Autolabor ROS 驱动模块<a class="headerlink" href="#autolabor-ros" title="永久链接至标题">¶</a></h1>
+<div class="section" id="id1">
+<h2>1. 介绍<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<p>Autolabor ROS驱动模块包含 <strong>CANBus 驱动</strong>和 <strong>Autolabor PM1 底盘驱动</strong>，其主要功能包括与Autolabor_CANbus模块通信，并通过线速度和角速度控制Autolabor PM1底盘行驶。</p>
+<div class="section" id="id2">
+<h3>特性<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h3>
+<ul class="simple">
+<li><p>可直接获取 CANBus 网络内数据，并通过 CAN 指令控制车辆</p>
+<ul>
+<li><p>获取动力轮编码器原始数值</p></li>
+<li><p>获取转向轮编码器原始数值</p></li>
+<li><p>分别控制动力轮的转速</p></li>
+<li><p>控制转向轮的绝对转向角度</p></li>
+</ul>
+</li>
+<li><p>可通过线速度与角速度控制移动底盘，无需单独控制后轮转向</p></li>
+<li><p>提供实时机器人底盘位置信息，方便闭环控制</p></li>
+<li><p>双动力轮电子差速控制，保证机器人在行驶过程中始终满足阿克曼原理</p></li>
+<li><p>根据后轮转向优化车辆运动速度，在保证车辆在行驶精度前提下，确保车辆行驶的流畅性</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id3">
+<h2>2. 节点<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<div class="section" id="canbus-driver">
+<h3>2.1 canbus_driver<a class="headerlink" href="#canbus-driver" title="永久链接至标题">¶</a></h3>
+<p>该节点提供与底层 AutoCan 的通讯，将 CAN 网络中的数据进行解析并发布至 canbus_msg 话题中，并开启 canbus_server 服务，提供其他节点调用，用以发送 CAN 指令到 CAN 网络中。</p>
+<p>该节点的结构如图所示：</p>
+<p><img alt="../../_images/canbus_driver.png" src="../../_images/canbus_driver.png" />canbus_driver</p>
+<div class="section" id="id4">
+<h4>2.1.1 订阅话题<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h4>
+<p>无</p>
+</div>
+<div class="section" id="id5">
+<h4>2.1.2 发布话题<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h4>
+<p>/canbus_msg  (<a class="reference internal" href="CanBusMessage.html"><span class="doc">autolabor_canbus_driver/CanBusMessage</span></a>)</p>
+<blockquote>
+<div><p>将底层 CAN 网络中的数据发布在 ROS 话题中，提供其他节点读取</p>
+</div></blockquote>
+</div>
+<div class="section" id="id6">
+<h4>2.1.3 服务<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h4>
+<p>/canbus_server  (<a class="reference internal" href="CanBusService.html"><span class="doc">autolabor_canbus_driver/CanBusService</span></a>)</p>
+<blockquote>
+<div><p>提供其他节点调用，用于往底层 CAN 网络中发布指令</p>
+</div></blockquote>
+</div>
+<div class="section" id="id7">
+<h4>2.1.4 参数<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h4>
+<p>~port_name  (str, default: /dev/ttyUSB0)</p>
+<blockquote>
+<div><p>CANBus 串口端口名</p>
+</div></blockquote>
+<p>~baud_rate  (int, default: 115200)</p>
+<blockquote>
+<div><p>CANBus 串口波特率</p>
+</div></blockquote>
+<p>~parse_rate  (int, default: 100)</p>
+<blockquote>
+<div><p>数据解析器从串口获取新数据的频率</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="pm1-driver">
+<h3>2.2 pm1_driver<a class="headerlink" href="#pm1-driver" title="永久链接至标题">¶</a></h3>
+<p>此节点主要用于接收用户发送的速度信息，控制转向轮转动，并根据后轮当前角度结合阿克曼模型优化求解动力轮的转动速度，控制移动底盘进行移动，同时根据动力轮编码器的反馈，输出轮速里程计信息。</p>
+<p>该节点结构如下：</p>
+<p><img alt="../../_images/pm1_driver.png" src="../../_images/pm1_driver.png" />pm1_driver</p>
+<div class="section" id="id8">
+<h4>2.2.1 订阅话题<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h4>
+<p>/cmd_vel (<a class="reference external" href="http://docs.ros.org/api/geometry_msgs/html/msg/Twist.html">geometry_msgs/Twist</a>)</p>
+<blockquote>
+<div><p>外部节点发送的速度信息</p>
+</div></blockquote>
+<p>/canbus_msg (<a class="reference internal" href="CanBusMessage.html"><span class="doc">autolabor_canbus_driver/CanBusMessage</span></a>)</p>
+<blockquote>
+<div><p>由 canbus_driver 发送的底层 CANBus 消息，其中包含转向轮当前绝对编码器以及动力轮的编码器信息</p>
+</div></blockquote>
+</div>
+<div class="section" id="id9">
+<h4>2.2.2 发布话题<a class="headerlink" href="#id9" title="永久链接至标题">¶</a></h4>
+<p>/odom (<a class="reference external" href="http://docs.ros.org/api/nav_msgs/html/msg/Odometry.html">nav_msgs/Odometry</a>)</p>
+<blockquote>
+<div><p>根据动力轮以及转向轮的编码器信息，依据车辆运动模型，计算出的轮速里程计信息</p>
+</div></blockquote>
+<p>/wheel_angle (<a class="reference external" href="http://docs.ros.org/api/std_msgs/html/msg/Float64.html">std_msgs/Float64</a>)</p>
+<blockquote>
+<div><p>转向轮实时绝对转角，单位 rad</p>
+</div></blockquote>
+</div>
+<div class="section" id="id10">
+<h4>2.2.3 服务<a class="headerlink" href="#id10" title="永久链接至标题">¶</a></h4>
+<p>/reset_odom (<a class="reference external" href="http://docs.ros.org/api/std_srvs/html/srv/Empty.html">std_srvs::Empty</a>)</p>
+<blockquote>
+<div><p>里程计清零，将里程计的原点放置在执行指令的位置</p>
+</div></blockquote>
+</div>
+<div class="section" id="id11">
+<h4>2.2.4 参数<a class="headerlink" href="#id11" title="永久链接至标题">¶</a></h4>
+<p>~odom_frame (str, default: odom)</p>
+<blockquote>
+<div><p>里程计坐标系名称</p>
+</div></blockquote>
+<p>~base_frame (str, default: base_link)</p>
+<blockquote>
+<div><p>移动底盘坐标系名称</p>
+</div></blockquote>
+<p>~ecu_left_id (int, default: 0)</p>
+<blockquote>
+<div><p>左侧动力单元的 CAN 节点编号（出厂已设置好，无需修改）</p>
+</div></blockquote>
+<p>~ecu_right_id (int, default: 1)</p>
+<blockquote>
+<div><p>右侧动力单元的 CAN 节点编号（出厂已设置好，无需修改）</p>
+</div></blockquote>
+<p>~tcu_id (int, default: 0)</p>
+<blockquote>
+<div><p>转向单元的 CAN 节点编号（出厂已设置好，无需修改）</p>
+</div></blockquote>
+<p>~rate (int, default: 10)</p>
+<blockquote>
+<div><p>速度控制以及里程计更新频率，单位 Hz</p>
+</div></blockquote>
+<p>~reduction_ratio (double, default: 20.0)</p>
+<blockquote>
+<div><p>动力单元编码器与车轮转速比例(和机械结构相关，无需修改)</p>
+</div></blockquote>
+<p>~encoder_resolution (double, default: 1600.0)</p>
+<blockquote>
+<div><p>动力单元编码器转动一圈产生的脉冲数(与编码器参数相关，无需修改)</p>
+</div></blockquote>
+<p>~wheel_diameter (double, default: 0.211)</p>
+<blockquote>
+<div><p>动力轮车轮直径，单位 m</p>
+</div></blockquote>
+<p>~wheel_spacing (double, default: 0.412)</p>
+<blockquote>
+<div><p>动力轮轮间距(两个动力轮中心之间的距离)，单位 m</p>
+</div></blockquote>
+<p>~shaft_spacing (double, default: 0.324)</p>
+<blockquote>
+<div><p>前后轮轴间距(转向轮中心到动力轮连线的距离)，单位 m</p>
+</div></blockquote>
+<p>~max_speed (double, default: 2.0)</p>
+<blockquote>
+<div><p>机器人底盘直线行驶最大速度，单位 m/s</p>
+</div></blockquote>
+<p>~twist_timeout (double, default: 1.0)</p>
+<blockquote>
+<div><p>速度控制超时时间，底盘的保护策略，最近一次的速度控制信息距当前时间超过这个时间，则强制移动底盘停止，单位 s</p>
+</div></blockquote>
+<p>~optimize_limit (double, default: 0.785)</p>
+<blockquote>
+<div><p>底盘行驶控制优化参数，用于设置底盘控制流畅程度，可设置范围为 [0, PI/2]，值越小表示执行越精确，但行驶流畅程度越低;值越大表示执行流畅程度越高，但精确度越低（如果没有特殊需求，一般保持默认值）</p>
+</div></blockquote>
+<p>~smooth_coefficient (double, default: 0.1)</p>
+<blockquote>
+<div><p>底盘行驶控制平滑参数，用于设置底盘速度变化平滑程度，可设置范围为 (0,1]，其中值越小表示速度变化越平缓；反之速度变化越剧烈。值为 1 时，表示对速度信息不进行平滑处理</p>
+</div></blockquote>
+</div>
+<div class="section" id="tf">
+<h4>2.2.5 TF转换信息<a class="headerlink" href="#tf" title="永久链接至标题">¶</a></h4>
+<p>odom -&gt; base_link</p>
+<blockquote>
+<div><p>提供车体坐标系与里程计坐标系间转换关系</p>
+</div></blockquote>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../dotnet/api-reference/index.html" class="btn btn-neutral float-left" title="PM1 .Net API 参考" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Autolabor
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

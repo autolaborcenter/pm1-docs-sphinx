@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+  <head>
+    <meta charset="utf-8" />
+    <title>autolabor::pm1::result</title>
+    <link rel="stylesheet" href="../../../_static/epub.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="autolabor-pm1-result">
+<h1>autolabor::pm1::result</h1>
+<p>定义于头文件 <a class="reference external" href="https://github.com/autolaborcenter/pm1_sdk/blob/master/src/main/pm1_sdk.h"><code class="docutils literal notranslate"><span class="pre">pm1_sdk.h</span></code></a><span class="link-target"> [https://github.com/autolaborcenter/pm1_sdk/blob/master/src/main/pm1_sdk.h]</span></p>
+<hr class="docutils" />
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">template</span><span class="o">&lt;</span>
+    <span class="k">class</span> <span class="nc">t</span>
+<span class="o">&gt;</span> <span class="k">struct</span> <span class="n">result</span><span class="p">;</span>
+</pre></div>
+</div>
+<hr class="docutils" />
+<p>类模板 <code class="docutils literal notranslate"><span class="pre">result</span></code> 存储一个 SDK 函数任何可能的结果，包括正常的返回值或函数无法正确完成的原因。</p>
+<p><code class="docutils literal notranslate"><span class="pre">result</span></code> 平凡地构造、复制和析构，可以从列表构造。</p>
+</div>
+<div class="section" id="id1">
+<h1>特化</h1>
+<p><code class="docutils literal notranslate"><span class="pre">result&lt;void&gt;</span></code> 特化为无 <code class="docutils literal notranslate"><span class="pre">value</span></code> 成员。</p>
+</div>
+<div class="section" id="id2">
+<h1>成员对象</h1>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>成员名</th>
+<th>类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>error_info</code></td>
+<td><code>std::string</code></td>
+</tr>
+<tr>
+<td><code>value</code></td>
+<td><code>t</code></td>
+</tr>
+</tbody>
+</table></div>
+<div class="section" id="id3">
+<h1>成员函数</h1>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>成员名</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="result_operator_bool.md"><code>operator bool</code></a></td>
+<td>转换到 <code>bool</code></td>
+</tr>
+</tbody>
+</table></div>
+<div class="section" id="id4">
+<h1>示例</h1>
+<p>下面一段代码调用 <code class="docutils literal notranslate"><span class="pre">initialize()</span></code>, 连接到机器人底盘，并在失败时通过标准错误流打印错误信息：</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;pm1_sdk.h&quot;</span><span class="cp"></span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+	<span class="n">autolabor</span><span class="o">::</span><span class="n">pm1</span><span class="o">::</span><span class="n">result</span> <span class="n">result</span> <span class="o">=</span> <span class="n">autolabor</span><span class="o">::</span><span class="n">pm1</span><span class="o">::</span><span class="n">initialize</span><span class="p">();</span>
+	<span class="k">if</span> <span class="p">(</span><span class="n">result</span><span class="p">)</span>
+		<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;connected to &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">result</span><span class="p">.</span><span class="n">value</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;, which may be a pm1 chassis&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+	<span class="k">else</span>
+		<span class="n">std</span><span class="o">::</span><span class="n">cerr</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;initialize failed, because:&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span>
+		          <span class="o">&lt;&lt;</span> <span class="n">result</span><span class="p">.</span><span class="n">error_info</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>可能的输出：</p>
+<p>成功时：</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>connected to COM3, which may be a pm1 chassis
+</pre></div>
+</div>
+<p>或失败时：</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>initialize failed, because:
+COM3: it<span class="s1">&#39;s not a pm1 chassis</span>
+<span class="s1">COM4: it&#39;</span>s not a pm1 chassis
+</pre></div>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

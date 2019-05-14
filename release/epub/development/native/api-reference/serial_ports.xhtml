@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+  <head>
+    <meta charset="utf-8" />
+    <title>autolabor::pm1::serial_ports</title>
+    <link rel="stylesheet" href="../../../_static/epub.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="autolabor-pm1-serial-ports">
+<h1>autolabor::pm1::serial_ports</h1>
+<p>声明于头文件 <a class="reference external" href="https://github.com/autolaborcenter/pm1_sdk/blob/master/src/main/pm1_sdk.h"><code class="docutils literal notranslate"><span class="pre">pm1_sdk.h</span></code></a><span class="link-target"> [https://github.com/autolaborcenter/pm1_sdk/blob/master/src/main/pm1_sdk.h]</span></p>
+<hr class="docutils" />
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span> 
+<span class="n">autolabor</span><span class="o">::</span><span class="n">pm1</span><span class="o">::</span><span class="n">serial_ports</span><span class="p">();</span>
+</pre></div>
+</div>
+<hr class="docutils" />
+<p>返回连接到计算机的串口列表。</p>
+</div>
+<div class="section" id="id1">
+<h1>参数</h1>
+<p>（无）</p>
+</div>
+<div class="section" id="id2">
+<h1>返回值</h1>
+<p>连接到计算机的所有串口的名字组成的动态数组。</p>
+</div>
+<div class="section" id="id3">
+<h1>示例</h1>
+<p>下面一段代码调用 <code class="docutils literal notranslate"><span class="pre">serial_ports()</span></code>, 在控制台打印出连接到计算机的串口列表：</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;pm1_sdk.h&quot;</span><span class="cp"></span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+	<span class="k">for</span> <span class="p">(</span><span class="k">const</span> <span class="k">auto</span> <span class="o">&amp;</span><span class="nl">port</span> <span class="p">:</span> <span class="n">autolabor</span><span class="o">::</span><span class="n">pm1</span><span class="o">::</span><span class="n">serial_ports</span><span class="p">())</span>
+		<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">port</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>可能的输出：</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>COM3
+COM4
+</pre></div>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

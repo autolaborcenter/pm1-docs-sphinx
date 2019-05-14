@@ -1,0 +1,282 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>PM1 快速入门指南 &mdash; Autolabor PM1  文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="性能参数" href="../introduction/parameters.html" />
+    <link rel="prev" title="目录" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Autolabor PM1
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">PM1 快速入门指南</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">本文内容</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">检查收货清单</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">无线手柄控制</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pm1-starter">PM1 Starter 软件控制</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/parameters.html">性能参数</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/notice.html">安全须知</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/services-and-supports.html">服务与支持</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/using-controller.html">使用手柄遥控</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/using-pm1-starter/doc.html">PM1 Starter 使用说明</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/using-ros.html">使用 ROS</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../development/native/readme.html">PM1 原生应用程序开发指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development/native/samples.html">PM1 原生 API 使用范例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development/native/api-reference/index.html">PM1 原生 API 参考</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../development/dotnet/readme.html">PM1 .Net 应用程序开发指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development/dotnet/samples.html">PM1 .Net API 使用范例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development/dotnet/api-reference/index.html">PM1 .Net API 参考</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../development/ros/readme.html">Autolabor ROS 驱动模块</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Autolabor PM1</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>PM1 快速入门指南</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/quick_start_tutorial/doc.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="pm1">
+<h1>PM1 快速入门指南<a class="headerlink" href="#pm1" title="永久链接至标题">¶</a></h1>
+<div class="section" id="id1">
+<h2>本文内容<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p><a href="#检查收货清单">检查收货清单</a></p></li>
+<li><p><a href="#无线手柄控制">无线手柄控制</a></p></li>
+<li><p><a href="#PM1 Starter 软件控制">PM1 Starter 软件控制</a></p></li>
+</ul>
+<p><a name="检查收货清单"></a></p>
+</div>
+<div class="section" id="id2">
+<h2>检查收货清单<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<p>收件后打开包装，对照产品装箱单/发货清单进行清点，如有短缺请于三日内联系客服，过期不补。</p>
+<p><a name="无线手柄控制"></a></p>
+</div>
+<div class="section" id="id3">
+<h2>无线手柄控制<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<p>对，下面是个 gif 动图：</p>
+<p><img alt="../_images/joystick_define.gif" src="../_images/joystick_define.gif" /></p>
+<blockquote>
+<div><p>更多详细信息请参考<a class="reference internal" href="../user-guide/using-controller.html"><span class="doc">手柄遥控指南</span></a>。</p>
+</div></blockquote>
+<p><a name="PM1 Starter 软件控制"></a></p>
+</div>
+<div class="section" id="pm1-starter">
+<h2>PM1 Starter 软件控制<a class="headerlink" href="#pm1-starter" title="永久链接至标题">¶</a></h2>
+<p>使用 PM1 Starter 控制</p>
+<ol>
+<li><p>电脑连接 PM1</p>
+<p>【TODO 驱动安装 硬件连接 链接】</p>
+</li>
+<li><p>软件连接 PM1</p>
+<p>打开 PM1 Starter，串口默认自动选择，点击 <code class="docutils literal notranslate"><span class="pre">连接</span></code> 按钮开始连接 PM1，如下图所示。</p>
+<p><img alt="../_images/connect.png" src="../_images/connect.png" /></p>
+<p>成功连接 PM1 之后，连接提示信息会显示 <code class="docutils literal notranslate"><span class="pre">已连接到PM1</span></code>，右侧 PM1 状态图标会显示锁定或者解锁图标，如下图所示。如果状态图标显示的是锁定<img alt="../_images/state_lock.png" src="../_images/state_lock.png" />，需要点击该图标解锁，解锁完成后图标变为解锁图标<img alt="../_images/state_unlock.png" src="../_images/state_unlock.png" />。</p>
+</li>
+<li><p>执行动作</p>
+<p>确保 PM1 前方有至少 1m 的可行驶区域，动作类型与参数保持默认，点击 <code class="docutils literal notranslate"><span class="pre">执行</span></code> 按钮开始以 0.1m/s 的速度向前直行 1m，如下图所示。</p>
+<p><img alt="../_images/connected_execute.png" src="../_images/connected_execute.png" /></p>
+<p>动作执行过程中可以通过点击 <code class="docutils literal notranslate"><span class="pre">暂停</span></code> 按钮暂停执行（快捷键空格），或者点击 <code class="docutils literal notranslate"><span class="pre">终止</span></code> 按钮终止执行（快捷键 Esc）。左下角显示里程计信息，点击 <code class="docutils literal notranslate"><span class="pre">清零</span></code> 可重置里程计。如下图所示。</p>
+<p><img alt="../_images/executing.png" src="../_images/executing.png" /></p>
+</li>
+<li><p>摇杆控制</p>
+<p>点击左侧 <code class="docutils literal notranslate"><span class="pre">连续控制模式</span></code> 标签切换到摇杆控制模式。鼠标左键按住摇杆中心白色圆圈向不同区域拖动实现对应的控制。摇杆界面如下图所示。</p>
+<p><img alt="../_images/joystick.png" src="../_images/joystick.png" /></p>
+</li>
+</ol>
+<blockquote>
+<div><p>更多详细信息请参考 <a class="reference internal" href="../user-guide/using-pm1-starter/doc.html"><span class="doc">PM1 Starter 用户手册</span></a>。</p>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../introduction/parameters.html" class="btn btn-neutral float-right" title="性能参数" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../index.html" class="btn btn-neutral float-left" title="目录" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Autolabor
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

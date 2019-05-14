@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+  <head>
+    <meta charset="utf-8" />
+    <title>Parameters 密封类</title>
+    <link rel="stylesheet" href="../../../_static/epub.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="parameters">
+<h1><code class="docutils literal notranslate"><span class="pre">Parameters</span></code> 密封类</h1>
+<ul class="simple">
+<li><p>命名空间：<code class="docutils literal notranslate"><span class="pre">Autolabor.PM1</span></code></p></li>
+<li><p>源文件：<a class="reference external" href="https://github.com/autolaborcenter/Autolabor.PM1.SDK.Net/blob/master/PM1.SDK.Net/PM1.SDK.Net/Parameter.cs"><code class="docutils literal notranslate"><span class="pre">Parameter.cs</span></code></a><span class="link-target"> [https://github.com/autolaborcenter/Autolabor.PM1.SDK.Net/blob/master/PM1.SDK.Net/PM1.SDK.Net/Parameter.cs]</span></p></li>
+<li><p>库文件：<code class="docutils literal notranslate"><span class="pre">pm1_sdk_native.dll</span></code>、<code class="docutils literal notranslate"><span class="pre">PM1.SDK.Net.dll</span></code></p></li>
+</ul>
+<hr class="docutils" />
+<p>索引所有<a class="reference internal" href="Parameter.xhtml"><span class="doc">底盘参数对象</span></a>。</p>
+<div class="section" id="id1">
+<h2>本文内容</h2>
+<ul class="simple">
+<li><p><a href="#定义">定义</a></p></li>
+<li><p><a href="#子类型">子类型</a></p></li>
+<li><p><a href="#索引器">索引器</a></p></li>
+<li><p><a href="#静态属性">静态属性</a></p></li>
+<li><p><a href="#非公共成员">非公共成员</a></p></li>
+</ul>
+<p><a name="定义"></a></p>
+</div>
+<div class="section" id="id2">
+<h2>定义</h2>
+<div class="highlight-c# notranslate"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">sealed</span> <span class="k">class</span> <span class="nc">Parameters</span>
+</pre></div>
+</div>
+<p>继承关系：<code class="docutils literal notranslate"><span class="pre">Object</span></code> → <code class="docutils literal notranslate"><span class="pre">Parameter</span></code></p>
+<p><a name="定义"></a></p>
+</div>
+<div class="section" id="id3">
+<h2>子类型</h2>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#IdEnum"><code>IdEnum</code> 枚举</a></td>
+<td>指定参数的标识符。</td>
+</tr>
+</tbody>
+</table><p><a name="IdEnum"></a></p>
+<div class="section" id="idenum">
+<h3><code class="docutils literal notranslate"><span class="pre">IdEnum</span></code> 枚举</h3>
+<div class="highlight-c# notranslate"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">enum</span> <span class="n">IdEnum</span> <span class="p">:</span> <span class="kt">uint</span>
+</pre></div>
+</div>
+<p>指定参数的标识符。</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>字段</th>
+<th>值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Width</code></td>
+<td>0</td>
+<td>宽度，两动力轮触地点的间距。</td>
+</tr>
+<tr>
+<td><code>Length</code></td>
+<td>1</td>
+<td>长度，动力轮轴与转向轮轴转向轴的距离。</td>
+</tr>
+<tr>
+<td><code>WheelRadius</code></td>
+<td>2</td>
+<td>动力轮的半径。</td>
+</tr>
+<tr>
+<td><code>MaxWheelSpeed</code></td>
+<td>3</td>
+<td>动力轮最大角速度。</td>
+</tr>
+<tr>
+<td><code>MaxV</code></td>
+<td>4</td>
+<td>底盘最大线速度。</td>
+</tr>
+<tr>
+<td><code>MaxW</code></td>
+<td>5</td>
+<td>底盘最大角速度。</td>
+</tr>
+<tr>
+<td><code>OptimizeWidth</code></td>
+<td>6</td>
+<td>优化函数的半宽度。</td>
+</tr>
+<tr>
+<td><code>Acceleration</code></td>
+<td>7</td>
+<td>动力轮最大角加速度。</td>
+</tr>
+</tbody>
+</table><p><a name="索引器"></a></p>
+</div>
+</div>
+<div class="section" id="id4">
+<h2>索引器</h2>
+<div class="section" id="id5">
+<h3>按枚举索引</h3>
+<div class="highlight-c# notranslate"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="n">Parameter</span> <span class="k">this</span><span class="p">[</span><span class="n">IdEnum</span> <span class="n">key</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+</div>
+<p>获取枚举项对应的参数对象。</p>
+<div class="section" id="id6">
+<h4>参数</h4>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">key</span></code> - 枚举项</p></li>
+</ul>
+</div>
+<div class="section" id="id7">
+<h4>返回值</h4>
+<p>参数对象。</p>
+<div class="highlight-c# notranslate"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="n">Parameter</span> <span class="k">this</span><span class="p">[</span><span class="kt">string</span> <span class="n">name</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+</div>
+<p>获取名字对应的参数对象。</p>
+</div>
+<div class="section" id="id8">
+<h4>参数</h4>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">name</span></code> - 名字</p></li>
+</ul>
+</div>
+<div class="section" id="id9">
+<h4>返回值</h4>
+<p>参数对象。</p>
+<p><a name="静态属性"></a></p>
+</div>
+</div>
+</div>
+<div class="section" id="id10">
+<h2>静态属性</h2>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>名字</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#Dictionary"><code>Dictionary</code></a></td>
+<td>存储枚举与对应的参数对象。</td>
+</tr>
+</tbody>
+</table><div class="section" id="dictionary">
+<h3><code class="docutils literal notranslate"><span class="pre">Dictionary</span></code></h3>
+<div class="highlight-c# notranslate"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">static</span> <span class="k">readonly</span> <span class="n">IReadOnlyDictionary</span><span class="p">&lt;</span><span class="n">IdEnum</span><span class="p">,</span> <span class="n">Parameter</span><span class="p">&gt;</span> <span class="n">Dictionary</span>
+</pre></div>
+</div>
+<p>存储枚举与对应的参数对象。</p>
+<p><a name="非公共成员"></a></p>
+</div>
+</div>
+<div class="section" id="id11">
+<h2>非公共成员</h2>
+<div class="section" id="id12">
+<h3>局部构造器</h3>
+<div class="highlight-c# notranslate"><div class="highlight"><pre><span></span><span class="k">internal</span> <span class="nf">Parameters</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

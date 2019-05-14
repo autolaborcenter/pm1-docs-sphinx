@@ -1,0 +1,270 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>控制机器人行驶 &mdash; Autolabor PM1  文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Autolabor PM1
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../quick_start_tutorial/doc.html">PM1 快速入门指南</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/parameters.html">性能参数</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/notice.html">安全须知</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/services-and-supports.html">服务与支持</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../user-guide/using-controller.html">使用手柄遥控</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user-guide/using-pm1-starter/doc.html">PM1 Starter 使用说明</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user-guide/using-ros.html">使用 ROS</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../native/readme.html">PM1 原生应用程序开发指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../native/samples.html">PM1 原生 API 使用范例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../native/api-reference/index.html">PM1 原生 API 参考</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../dotnet/readme.html">PM1 .Net 应用程序开发指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dotnet/samples.html">PM1 .Net API 使用范例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dotnet/api-reference/index.html">PM1 .Net API 参考</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ros/readme.html">Autolabor ROS 驱动模块</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Autolabor PM1</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>控制机器人行驶</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/development/concepts/drive.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>控制机器人行驶<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<p>SDK 提供两种风格来控制机器人行驶：</p>
+<ul class="simple">
+<li><p>基于<em>动作</em>，精确、阻塞地控制</p></li>
+<li><p>基于<em>指令</em>，连续、非阻塞地控制</p></li>
+</ul>
+<p>这两种风格是<strong>不兼容的</strong>，无法同时使用，多线程使用时一旦发生冲突，未能开始执行的控制函数将会立即产生异常，而不是阻塞等待。</p>
+<p><a name="动作"></a></p>
+<div class="section" id="id2">
+<h2><em>动作</em>控制<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<p><em>动作</em>是离散、同步、阻塞的概念。一个动作有明确的开始、运行、完成的过程。如无特殊说明，这些函数在运行中会阻塞当前线程。</p>
+<p>执行动作将<strong>完全占用</strong>底盘：</p>
+<ul class="simple">
+<li><p>一个动作在执行过程中除了被暂停或取消之外，是无法被干预的，动作会按预设的流程调整执行的方式，尽可能地满足开始执行之前对它的<em>描述</em>。</p></li>
+<li><p>动作也会排斥其他控制行驶的操作，那些操作都会失败。当然，这也意味着动作之间是<strong>互斥</strong>的。</p></li>
+<li><p>一个动作未完成前，另一个动作无法开始。</p></li>
+</ul>
+<div class="section" id="id3">
+<h3>描述动作<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h3>
+<p>要开始一个动作，需要以对其效果的描述为参数，调用对应的函数。具体到控制机器人行驶来说，有 3 类参数描述一个行驶动作：</p>
+<ul class="simple">
+<li><p>速度：更好的表述是最大速度，因为底盘将自动在启动和停止时调速来保证运动的准确性。</p></li>
+<li><p>路径：即转弯半径 <code class="docutils literal notranslate"><span class="pre">r</span></code>，对路径形状的描述。</p></li>
+<li><p>约束：行驶何时结束，可以是空间（如行驶一定距离或转过一定角度），也可以是时间。</p></li>
+</ul>
+</div>
+<div class="section" id="id4">
+<h3>暂停、恢复和取消<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h3>
+<p>动作进行期间，除了其他外部的异常，如底盘突然锁定或串口连接突然断开之类，对其仅能进行的干预为暂停、恢复和取消。</p>
+<p><strong>暂停</strong>将会使机器人立即在原地刹停。</p>
+<p>暂停不会使动作函数交出其控制权，其他动作和行驶控制仍然被排斥。以空间为约束的动作自然会随着底盘停止而停止其进程；同时，以时间为约束的动作，计时也会暂停。</p>
+<p><strong>恢复</strong>允许被暂停的动作继续执行。</p>
+<p>从结果上，恢复不会影响动作总体的效果，进度也持续累加，看起来是恢复了之前的动作；但从过程上说，恢复像是开始了一个新的动作：底盘会以动作要求的最大加速度重新启动，而不是立即加速到暂停时的速度。</p>
+<p>如果机器人速度较快且没有限制加速度，暂停引起的刹停可能引入较大的控制误差。由于加速和减速过程计时并不减慢，每一次暂停都会使由时间约束的动作越过的空间减少。限制加速度的情况下，暂停引起的刹停的耗时不计入时间约束中。</p>
+<p>暂停和恢复操作不需要成对。无论暂停了多少次，一次恢复就会继续执行动作。</p>
+<p><strong>取消</strong>动作使动作立即结束并交还底盘控制权。由于动作并非正常完成，将有一个异常以合适的方式被抛出。</p>
+</div>
+<div class="section" id="id5">
+<h3>状态对动作的影响<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h3>
+<p>动作的执行要求机器人必须保持正常（解锁）的状态。试图在锁定时开始动作将直接引发一个异常。在动作执行期间锁定底盘将使动作立即结束并交还底盘控制权。由于动作并非正常完成，将有一个异常以合适的方式被抛出。</p>
+<blockquote>
+<div><p>注意，手柄也能锁定和解锁底盘，参见<a class="reference internal" href="../../user-guide/using-controller.html"><span class="doc">使用手柄遥控</span></a>。</p>
+</div></blockquote>
+<p>但有一个例外情况，暂停期间锁定底盘并不会中断动作；只要恢复之前将底盘解锁即可。</p>
+<p>锁定、解锁、暂停恢复的操作当且仅当以下图所示的顺序交错时，动作才不会被终止。</p>
+<p><img alt="../../_images/order.png" src="../../_images/order.png" /></p>
+<p><a name="指令"></a></p>
+</div>
+</div>
+<div class="section" id="id6">
+<h2><em>指令</em>控制<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h2>
+<p><em>指令</em>是连续、异步、非阻塞的概念。指令由用户代码发出，被<em>发送</em>到底盘，底盘的驱动程序将自主选择，在合适的时机，以合适的方式执行。</p>
+<p>也就是说，指令可能无法得到准确的执行。但相应地，当一连串指令依次到来时，在指令之间的转移会更加流畅。而即使是两个相同的动作依次执行，第一个动作依然需要经历停止的减速，第二个动作也需要启动的加速。而指令不要求明确的开始和完成，因此也不需要阻塞。</p>
+<p>在底层实现中，<em>事件循环</em>会反复对来自上层的指令做一定的修饰并周期性的控制底盘。事件循环中设置了超时，<strong>若较长时间内上层都没有发布新的指令，机器人将停止</strong>，以保证安全。因此，要正常控制机器人，必须以足够短的时间间隔反复发送指令。建议的指令周期为 0.1 秒，但任意快都是合法的，在单线程中，任意缩短指令周期不会降低底盘性能。</p>
+<p>指令典型的应用领域是遥控程序。</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Autolabor
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

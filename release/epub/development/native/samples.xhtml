@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+  <head>
+    <meta charset="utf-8" />
+    <title>PM1 原生 API 使用范例</title>
+    <link rel="stylesheet" href="../../_static/epub.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="pm1-api">
+<h1>PM1 原生 API 使用范例</h1>
+<div class="section" id="visual-studio-c-api">
+<h2>在 Visual Studio 环境下使用 C++ API 开发</h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="vs_tutorial/doc.xhtml"><span class="doc">获取并配置库文件</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="initialization">
+<h2>初始化示例（Initialization）</h2>
+<ul class="simple">
+<li><p>概念</p>
+<ul>
+<li><p><a href="api-reference/initialize.html#注意">初始化</a></p></li>
+</ul>
+</li>
+<li><p>API</p>
+<ul>
+<li><p>初始化与 PM1 连接 （<a class="reference internal" href="api-reference/initialize.xhtml"><span class="doc">initialize</span></a>）</p></li>
+<li><p>读取底盘状态、解锁底盘 （<a class="reference internal" href="api-reference/check_state.xhtml"><span class="doc">check_state</span></a>、<a class="reference internal" href="api-reference/unlock.xhtml"><span class="doc">unlock</span></a>）</p></li>
+<li><p>控制 PM1 以0.25rad/s 的速度原地转90° （<a class="reference internal" href="api-reference/turn_around.xhtml"><span class="doc">turn_around</span></a>）</p></li>
+<li><p>断开连接 （<a class="reference internal" href="api-reference/shutdown.xhtml"><span class="doc">shutdown</span></a>）</p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://github.com/autolaborcenter/pm1_sdk/blob/master/src/sample/user_sample/initialization.cpp">代码</a><span class="link-target"> [https://github.com/autolaborcenter/pm1_sdk/blob/master/src/sample/user_sample/initialization.cpp]</span></p></li>
+</ul>
+</div>
+<div class="section" id="actioncontrol">
+<h2>动作控制示例（ActionControl）</h2>
+<ul class="simple">
+<li><p>概念</p>
+<ul>
+<li><p><a href="../concepts/drive.html#动作">动作控制</a></p></li>
+</ul>
+</li>
+<li><p>API</p>
+<ul>
+<li><p>初始化与 PM1 连接 （<a class="reference internal" href="api-reference/initialize.xhtml"><span class="doc">initialize</span></a>）</p></li>
+<li><p>读取底盘状态 （<a class="reference internal" href="api-reference/check_state.xhtml"><span class="doc">check_state</span></a>）</p></li>
+<li><p>根据指令锁定/解锁底盘（<a class="reference internal" href="api-reference/lock.xhtml"><span class="doc">lock</span></a>、<a class="reference internal" href="api-reference/unlock.xhtml"><span class="doc">unlock</span></a>）</p></li>
+<li><p>根据指令执行相应动作（<a class="reference internal" href="api-reference/go_straight.xhtml"><span class="doc">go_straight</span></a>、<a class="reference internal" href="api-reference/go_arc_va.xhtml"><span class="doc">go_arc_va</span></a>、<a class="reference internal" href="api-reference/turn_around.xhtml"><span class="doc">turn_around</span></a>）</p></li>
+<li><p>Esc键终止正在执行的动作（<a class="reference internal" href="api-reference/cancel_action.xhtml"><span class="doc">cancel_action</span></a>）</p></li>
+<li><p>断开连接 （<a class="reference internal" href="api-reference/shutdown.xhtml"><span class="doc">shutdown</span></a>）</p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://github.com/autolaborcenter/pm1_sdk/blob/master/src/sample/user_sample/action_control.cpp">代码</a><span class="link-target"> [https://github.com/autolaborcenter/pm1_sdk/blob/master/src/sample/user_sample/action_control.cpp]</span></p></li>
+</ul>
+</div>
+<div class="section" id="continuouscontrol">
+<h2>连续控制示例（ContinuousControl）</h2>
+<ul class="simple">
+<li><p>概念</p>
+<ul>
+<li><p><a href="../concepts/drive.html#指令">连续控制</a></p></li>
+</ul>
+</li>
+<li><p>API</p>
+<ul>
+<li><p>初始化与 PM1 连接 （<a class="reference internal" href="api-reference/initialize.xhtml"><span class="doc">initialize</span></a>）</p></li>
+<li><p>读取底盘状态、解锁底盘 （<a class="reference internal" href="api-reference/check_state.xhtml"><span class="doc">check_state</span></a>、<a class="reference internal" href="api-reference/unlock.xhtml"><span class="doc">unlock</span></a>）</p></li>
+<li><p>方向键控制 PM1 运动（<a class="reference internal" href="api-reference/drive.xhtml"><span class="doc">drive</span></a>）</p></li>
+<li><p>断开连接 （<a class="reference internal" href="api-reference/shutdown.xhtml"><span class="doc">shutdown</span></a>）</p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://github.com/autolaborcenter/pm1_sdk/blob/master/src/sample/user_sample/continuous_control.cpp">代码</a><span class="link-target"> [https://github.com/autolaborcenter/pm1_sdk/blob/master/src/sample/user_sample/continuous_control.cpp]</span></p></li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

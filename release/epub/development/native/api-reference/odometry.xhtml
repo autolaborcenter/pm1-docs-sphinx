@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+  <head>
+    <meta charset="utf-8" />
+    <title>autolabor::pm1::odometry</title>
+    <link rel="stylesheet" href="../../../_static/epub.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="autolabor-pm1-odometry">
+<h1>autolabor::pm1::odometry</h1>
+<p>定义于头文件 <a class="reference external" href="https://github.com/autolaborcenter/pm1_sdk/blob/master/src/main/pm1_sdk.h"><code class="docutils literal notranslate"><span class="pre">pm1_sdk.h</span></code></a><span class="link-target"> [https://github.com/autolaborcenter/pm1_sdk/blob/master/src/main/pm1_sdk.h]</span></p>
+<hr class="docutils" />
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">struct</span> <span class="n">odometry</span> <span class="p">{</span> <span class="kt">double</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">yaw</span><span class="p">,</span> <span class="n">vx</span><span class="p">,</span> <span class="n">vy</span><span class="p">,</span> <span class="n">w</span><span class="p">;</span> <span class="p">};</span>
+</pre></div>
+</div>
+<hr class="docutils" />
+<p>里程，里程计读数。</p>
+</div>
+<div class="section" id="id1">
+<h1>成员对象</h1>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>成员名</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>x</code></td>
+<td><code>double</code></td>
+<td>当前机器人坐标系在里程计坐标系上位置的 X 轴坐标值</td>
+</tr>
+<tr>
+<td><code>y</code></td>
+<td><code>double</code></td>
+<td>当前机器人坐标系在里程计坐标系上位置的 Y 轴坐标值</td>
+</tr>
+<tr>
+<td><code>yaw</code></td>
+<td><code>double</code></td>
+<td>当前机器人坐标系相对里程计坐标系的偏角</td>
+</tr>
+<tr>
+<td><code>vx</code></td>
+<td><code>double</code></td>
+<td>当前机器人坐标系运动速度在里程计坐标系 X 方向的分量</td>
+</tr>
+<tr>
+<td><code>vy</code></td>
+<td><code>double</code></td>
+<td>当前机器人坐标系运动速度在里程计坐标系 Y 方向的分量</td>
+</tr>
+<tr>
+<td><code>w</code></td>
+<td><code>double</code></td>
+<td>当前机器人坐标系旋转的角速度</td>
+</tr>
+</tbody>
+</table></div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

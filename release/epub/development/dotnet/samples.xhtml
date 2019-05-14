@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+  <head>
+    <meta charset="utf-8" />
+    <title>PM1 .Net API 使用范例</title>
+    <link rel="stylesheet" href="../../_static/epub.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="pm1-net-api">
+<h1>PM1 .Net API 使用范例</h1>
+<div class="section" id="visual-studio-c-api">
+<h2>在 Visual Studio 环境下使用 C# API 开发</h2>
+<ul class="simple">
+<li><p>.Net DLL (<a class="reference external" href="#">PM1.SDK.Net.dll</a>)</p></li>
+<li><p>Native DLL (<a class="reference external" href="https://github.com/autolaborcenter/pm1_sdk/releases">pm1_sdk_native_debug.dll、pm1_sdk_native.dll</a><span class="link-target"> [https://github.com/autolaborcenter/pm1_sdk/releases]</span>)</p></li>
+</ul>
+<blockquote>
+<div><p>注意：程序运行时还需要将 native DLL 文件拷贝至运行目录下。</p>
+</div></blockquote>
+</div>
+<div class="section" id="initialization-net">
+<h2>初始化示例（Initialization.Net）</h2>
+<ul class="simple">
+<li><p>概念</p>
+<ul>
+<li><p><a href="api-reference/Methods/Initialize.html#注意">初始化</a></p></li>
+</ul>
+</li>
+<li><p>API</p>
+<ul>
+<li><p>初始化与 PM1 连接 （<a class="reference internal" href="api-reference/Methods/Initialize.xhtml"><span class="doc">Methods.Initialize</span></a>）</p></li>
+<li><p>读取底盘状态、解锁底盘 （<a class="reference internal" href="api-reference/Methods/State.xhtml"><span class="doc">Methods.State</span></a>）</p></li>
+<li><p>控制 PM1 以0.25rad/s 的速度原地转90° （<a class="reference internal" href="api-reference/Methods/TurnAround.xhtml"><span class="doc">Methods.TurnAround</span></a>）</p></li>
+<li><p>断开连接 （<a class="reference internal" href="api-reference/Methods/ShutdownSafety.xhtml"><span class="doc">Methods.ShutdownSafety</span></a>）</p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://github.com/autolaborcenter/PM1.SDK.Net.Samples">代码</a><span class="link-target"> [https://github.com/autolaborcenter/PM1.SDK.Net.Samples]</span></p></li>
+</ul>
+</div>
+<div class="section" id="actioncontrol-net">
+<h2>动作控制示例（ActionControl.Net）</h2>
+<ul class="simple">
+<li><p>概念</p>
+<ul>
+<li><p><a href="../concepts/drive.html#动作">动作控制</a></p></li>
+</ul>
+</li>
+<li><p>API</p>
+<ul>
+<li><p>初始化与 PM1 连接 （<a class="reference internal" href="api-reference/Methods/Initialize.xhtml"><span class="doc">Methods.Initialize</span></a>）</p></li>
+<li><p>读取底盘状态 （<a class="reference internal" href="api-reference/Methods/State.xhtml"><span class="doc">Methods.State</span></a>）</p></li>
+<li><p>根据指令锁定/解锁底盘（<a class="reference internal" href="api-reference/Methods/State.xhtml"><span class="doc">Methods.State</span></a>）</p></li>
+<li><p>根据指令执行相应动作（<a class="reference internal" href="api-reference/Methods/GoStraight.xhtml"><span class="doc">Methods.GoStraight</span></a>、<a class="reference internal" href="api-reference/Methods/GoArcVA.xhtml"><span class="doc">Methods.GoArcVA</span></a>、<a class="reference internal" href="api-reference/Methods/TurnAround.xhtml"><span class="doc">Methods.TurnAround</span></a>）</p></li>
+<li><p>Esc键终止正在执行的动作（<a class="reference internal" href="api-reference/Methods/CancelAction.xhtml"><span class="doc">Methods.CancelAction</span></a>）</p></li>
+<li><p>断开连接 （<a class="reference internal" href="api-reference/Methods/ShutdownSafety.xhtml"><span class="doc">Methods.ShutdownSafety</span></a>）</p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://github.com/autolaborcenter/PM1.SDK.Net.Samples">代码</a><span class="link-target"> [https://github.com/autolaborcenter/PM1.SDK.Net.Samples]</span></p></li>
+</ul>
+</div>
+<div class="section" id="continuouscontrol-net">
+<h2>连续控制示例（ContinuousControl.Net）</h2>
+<ul class="simple">
+<li><p>概念</p>
+<ul>
+<li><p><a href="../concepts/drive.html#指令">连续控制</a></p></li>
+</ul>
+</li>
+<li><p>API</p>
+<ul>
+<li><p>初始化与 PM1 连接 （<a class="reference internal" href="api-reference/Methods/Initialize.xhtml"><span class="doc">Methods.Initialize</span></a>）</p></li>
+<li><p>读取底盘状态、解锁底盘 （<a class="reference internal" href="api-reference/Methods/State.xhtml"><span class="doc">Methods.State</span></a>）</p></li>
+<li><p>方向键控制 PM1 运动（<a class="reference internal" href="api-reference/Methods/VelocityTarget.xhtml"><span class="doc">Methods.VelocityTarget</span></a>）</p></li>
+<li><p>断开连接 （<a class="reference internal" href="api-reference/Methods/ShutdownSafety.xhtml"><span class="doc">Methods.ShutdownSafety</span></a>）</p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://github.com/autolaborcenter/PM1.SDK.Net.Samples">代码</a><span class="link-target"> [https://github.com/autolaborcenter/PM1.SDK.Net.Samples]</span></p></li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

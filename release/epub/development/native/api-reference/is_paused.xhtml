@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+  <head>
+    <meta charset="utf-8" />
+    <title>autolabor::pm1::is_paused</title>
+    <link rel="stylesheet" href="../../../_static/epub.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="autolabor-pm1-is-paused">
+<h1>autolabor::pm1::is_paused</h1>
+<p>声明于头文件 <a class="reference external" href="https://github.com/autolaborcenter/pm1_sdk/blob/master/src/main/pm1_sdk.h"><code class="docutils literal notranslate"><span class="pre">pm1_sdk.h</span></code></a><span class="link-target"> [https://github.com/autolaborcenter/pm1_sdk/blob/master/src/main/pm1_sdk.h]</span></p>
+<hr class="docutils" />
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="kt">bool</span>
+<span class="n">autolabor</span><span class="o">::</span><span class="n">pm1</span><span class="o">::</span><span class="n">is_paused</span><span class="p">();</span>
+</pre></div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="id1">
+<h1>参数</h1>
+<p>（无）</p>
+</div>
+<div class="section" id="id2">
+<h1>返回值</h1>
+<p>若处于暂停状态，<code class="docutils literal notranslate"><span class="pre">true</span></code>；否则，<code class="docutils literal notranslate"><span class="pre">false</span></code>。</p>
+</div>
+<div class="section" id="id3">
+<h1>注意</h1>
+<p><em>已暂停</em>是一个状态，这意味着即使当前并没有动作正在执行或者被暂停，也可以处于暂停状态，甚至未连接底盘时也可以查询或更改这个状态。因此这个函数可以在未连接时调用。</p>
+<p>初始化时，状态会重置为<em>未暂停</em>。</p>
+</div>
+<div class="section" id="id4">
+<h1>参考</h1>
+<p>阅读<a class="reference internal" href="../../concepts/drive.xhtml"><span class="doc">控制机器人行驶</span></a>了解控制方式。</p>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

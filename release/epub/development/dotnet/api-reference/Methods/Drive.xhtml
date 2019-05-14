@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+  <head>
+    <meta charset="utf-8" />
+    <title>Methods.Drive 静态方法</title>
+    <link rel="stylesheet" href="../../../../_static/epub.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="methods-drive">
+<h1><code class="docutils literal notranslate"><span class="pre">Methods.Drive</span></code> 静态方法</h1>
+<ul class="simple">
+<li><p>命名空间：<code class="docutils literal notranslate"><span class="pre">Autolabor.PM1</span></code></p></li>
+<li><p>源文件：<a class="reference external" href="https://github.com/autolaborcenter/Autolabor.PM1.SDK.Net/blob/master/PM1.SDK.Net/PM1.SDK.Net/Methods.cs"><code class="docutils literal notranslate"><span class="pre">Methods.cs</span></code></a><span class="link-target"> [https://github.com/autolaborcenter/Autolabor.PM1.SDK.Net/blob/master/PM1.SDK.Net/PM1.SDK.Net/Methods.cs]</span></p></li>
+<li><p>库文件：<code class="docutils literal notranslate"><span class="pre">pm1_sdk_native.dll</span></code>、<code class="docutils literal notranslate"><span class="pre">PM1.SDK.Net.dll</span></code></p></li>
+</ul>
+<hr class="docutils" />
+<p>控制机器人执行指定约束下的指定动作。</p>
+<div class="section" id="id1">
+<h2>重载</h2>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>参数签名</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#spatium"><code>Drive(double v, double w, double spatium, out double progress)</code></a></td>
+<td>控制机器人执行受空间约束的指定动作。</td>
+</tr>
+<tr>
+<td><a href="#time"><code>Drive(double v, double w, TimeSpan time, out double progress)</code></a></td>
+<td>控制机器人执行受时间约束的指定动作。</td>
+</tr>
+</tbody>
+</table><p><a name="spatium"></a></p>
+</div>
+<div class="section" id="drive-double-v-double-w-double-spatium-out-double-progress">
+<h2><code class="docutils literal notranslate"><span class="pre">Drive(double</span> <span class="pre">v,</span> <span class="pre">double</span> <span class="pre">w,</span> <span class="pre">double</span> <span class="pre">spatium,</span> <span class="pre">out</span> <span class="pre">double</span> <span class="pre">progress)</span></code></h2>
+<div class="section" id="id2">
+<h3>定义</h3>
+<div class="highlight-c# notranslate"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">Drive</span><span class="p">(</span><span class="kt">double</span> <span class="n">v</span><span class="p">,</span> <span class="kt">double</span> <span class="n">w</span><span class="p">,</span> <span class="kt">double</span> <span class="n">spatium</span><span class="p">,</span> <span class="k">out</span> <span class="kt">double</span> <span class="n">progress</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id3">
+<h3>参数</h3>
+<ul class="simple">
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">v</span></code></strong> - 线速度（米/秒）</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">w</span></code></strong> - 角速度（弧度/秒）</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">spatium</span></code></strong> - 空间约束（参见 <a class="reference internal" href="CalculateSpatium.xhtml"><span class="doc">CalculateSpatium</span></a>）</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">progress</span></code></strong> - 进度</p></li>
+</ul>
+</div>
+<div class="section" id="id4">
+<h3>返回值</h3>
+<p>（无）</p>
+<p><a name="time"></a></p>
+</div>
+</div>
+<div class="section" id="drive-double-v-double-w-timespan-time-out-double-progress">
+<h2><code class="docutils literal notranslate"><span class="pre">Drive(double</span> <span class="pre">v,</span> <span class="pre">double</span> <span class="pre">w,</span> <span class="pre">TimeSpan</span> <span class="pre">time,</span> <span class="pre">out</span> <span class="pre">double</span> <span class="pre">progress)</span></code></h2>
+<div class="section" id="id5">
+<h3>定义</h3>
+<div class="highlight-c# notranslate"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">Drive</span><span class="p">(</span><span class="kt">double</span> <span class="n">v</span><span class="p">,</span> <span class="kt">double</span> <span class="n">w</span><span class="p">,</span> <span class="n">TimeSpan</span> <span class="n">time</span><span class="p">,</span> <span class="k">out</span> <span class="kt">double</span> <span class="n">progress</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id6">
+<h3>参数</h3>
+<ul class="simple">
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">v</span></code></strong> - 线速度（米/秒）</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">w</span></code></strong> - 角速度（弧度/秒）</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">time</span></code></strong> - 时间约束</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">progress</span></code></strong> - 进度</p></li>
+</ul>
+</div>
+<div class="section" id="id7">
+<h3>返回值</h3>
+<p>（无）</p>
+</div>
+<div class="section" id="id8">
+<h3>参考</h3>
+<p>阅读<a class="reference internal" href="../../../concepts/drive.xhtml"><span class="doc">控制机器人行驶</span></a>了解控制方式。</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

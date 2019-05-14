@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+  <head>
+    <meta charset="utf-8" />
+    <title>autolabor::pm1::parameter_id</title>
+    <link rel="stylesheet" href="../../../_static/epub.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="autolabor-pm1-parameter-id">
+<h1>autolabor::pm1::parameter_id</h1>
+<p>定义于头文件 <a class="reference external" href="https://github.com/autolaborcenter/pm1_sdk/blob/master/src/main/pm1_sdk.h"><code class="docutils literal notranslate"><span class="pre">pm1_sdk.h</span></code></a><span class="link-target"> [https://github.com/autolaborcenter/pm1_sdk/blob/master/src/main/pm1_sdk.h]</span></p>
+<hr class="docutils" />
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">enum</span> <span class="k">class</span> <span class="nc">parameter_id</span> <span class="o">:</span> <span class="kt">uint32_t</span> <span class="p">{</span>
+	<span class="n">width</span><span class="p">,</span>
+	<span class="n">length</span><span class="p">,</span>
+	<span class="n">wheel_radius</span><span class="p">,</span>
+	<span class="n">optimize_width</span><span class="p">,</span>
+	<span class="n">acceleration</span><span class="p">,</span>
+	<span class="n">max_v</span><span class="p">,</span>
+    <span class="n">max_w</span>
+<span class="p">};</span>
+</pre></div>
+</div>
+<hr class="docutils" />
+<p>定义用于访问底盘参数的标识符。</p>
+</div>
+<div class="section" id="id1">
+<h1>成员对象</h1>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>成员名</th>
+<th>底层数值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>width</code></td>
+<td>0</td>
+<td>宽度，两动力轮触地点的间距</td>
+</tr>
+<tr>
+<td><code>length</code></td>
+<td>1</td>
+<td>长度，动力轮轴与转向轮轴转向轴的距离</td>
+</tr>
+<tr>
+<td><code>wheel_radius</code></td>
+<td>2</td>
+<td>动力轮的半径</td>
+</tr>
+<tr>
+<td><code>max_wheel_speed</code></td>
+<td>3</td>
+<td>动力轮最大角速度</td>
+</tr>
+<tr>
+<td><code>max_v</code></td>
+<td>4</td>
+<td>底盘最大线速度</td>
+</tr>
+<tr>
+<td><code>max_w</code></td>
+<td>5</td>
+<td>底盘最大角速度</td>
+</tr>
+<tr>
+<td><code>optimize_width</code></td>
+<td>6</td>
+<td>优化函数的半宽度</td>
+</tr>
+<tr>
+<td><code>acceleration</code></td>
+<td>7</td>
+<td>动力轮最大角加速度</td>
+</tr>
+</tbody>
+</table></div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

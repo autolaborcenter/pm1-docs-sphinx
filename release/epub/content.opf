@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" xml:lang="zh_CN"
+ unique-identifier="unknown"
+ prefix="ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0/">
+  <metadata xmlns:opf="http://www.idpf.org/2007/opf"
+        xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:language>zh_CN</dc:language>
+    <dc:title>Autolabor PM1</dc:title>
+    <dc:description>unknown</dc:description>
+    <dc:creator>yangdr</dc:creator>
+    <dc:contributor>unknown</dc:contributor>
+    <dc:publisher>yangdr</dc:publisher>
+    <dc:rights>2019, Autolabor</dc:rights>
+    <dc:identifier id="unknown">unknown</dc:identifier>
+    <dc:date>2019-05-14T19:23:05Z</dc:date>
+    <meta property="dcterms:modified">2019-05-14T19:23:05Z</meta>
+    <meta property="ibooks:version"></meta>
+    <meta property="ibooks:specified-fonts">true</meta>
+    <meta property="ibooks:binding">true</meta>
+    <meta property="ibooks:scroll-axis">vertical</meta>
+  </metadata>
+  <manifest>
+    <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml" />
+    <item id="nav" href="nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>
+    <item id="epub-0" href="genindex.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-1" href="index.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-2" href="_images/action.png" media-type="image/png" />
+    <item id="epub-3" href="_images/add.png" media-type="image/png" />
+    <item id="epub-4" href="_images/add1.png" media-type="image/png" />
+    <item id="epub-5" href="_images/canbus_driver.png" media-type="image/png" />
+    <item id="epub-6" href="_images/connect.png" media-type="image/png" />
+    <item id="epub-7" href="_images/connect1.png" media-type="image/png" />
+    <item id="epub-8" href="_images/connected_execute.png" media-type="image/png" />
+    <item id="epub-9" href="_images/create.png" media-type="image/png" />
+    <item id="epub-10" href="_images/create1.png" media-type="image/png" />
+    <item id="epub-11" href="_images/download.png" media-type="image/png" />
+    <item id="epub-12" href="_images/executing.png" media-type="image/png" />
+    <item id="epub-13" href="_images/go_straight.png" media-type="image/png" />
+    <item id="epub-14" href="_images/go_straight1.png" media-type="image/png" />
+    <item id="epub-15" href="_images/input.png" media-type="image/png" />
+    <item id="epub-16" href="_images/joystick.png" media-type="image/png" />
+    <item id="epub-17" href="_images/joystick1.png" media-type="image/png" />
+    <item id="epub-18" href="_images/joystick_define.gif" media-type="image/gif" />
+    <item id="epub-19" href="_images/lock.png" media-type="image/png" />
+    <item id="epub-20" href="_images/main_ui.png" media-type="image/png" />
+    <item id="epub-21" href="_images/odom.png" media-type="image/png" />
+    <item id="epub-22" href="_images/order.png" media-type="image/png" />
+    <item id="epub-23" href="_images/pm1_driver.png" media-type="image/png" />
+    <item id="epub-24" href="_images/progress.png" media-type="image/png" />
+    <item id="epub-25" href="_images/run.png" media-type="image/png" />
+    <item id="epub-26" href="_images/serialport.png" media-type="image/png" />
+    <item id="epub-27" href="_images/state_connect.png" media-type="image/png" />
+    <item id="epub-28" href="_images/state_lock.png" media-type="image/png" />
+    <item id="epub-29" href="_images/state_lock1.png" media-type="image/png" />
+    <item id="epub-30" href="_images/state_unconnect.png" media-type="image/png" />
+    <item id="epub-31" href="_images/state_unknown.png" media-type="image/png" />
+    <item id="epub-32" href="_images/state_unlock.png" media-type="image/png" />
+    <item id="epub-33" href="_images/state_unlock1.png" media-type="image/png" />
+    <item id="epub-34" href="_images/unlock.png" media-type="image/png" />
+    <item id="epub-35" href="_images/wechat.png" media-type="image/png" />
+    <item id="epub-36" href="_static/basic.css" media-type="text/css" />
+    <item id="epub-37" href="_static/epub.css" media-type="text/css" />
+    <item id="epub-38" href="_static/file.png" media-type="image/png" />
+    <item id="epub-39" href="_static/minus.png" media-type="image/png" />
+    <item id="epub-40" href="_static/plus.png" media-type="image/png" />
+    <item id="epub-41" href="_static/pygments.css" media-type="text/css" />
+    <item id="epub-42" href="development/concepts/drive.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-43" href="development/dotnet/readme.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-44" href="development/dotnet/samples.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-45" href="development/dotnet/api-reference/AsyncMethods-Class.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-46" href="development/dotnet/api-reference/Methods-Class.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-47" href="development/dotnet/api-reference/Parameter.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-48" href="development/dotnet/api-reference/Parameters.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-49" href="development/dotnet/api-reference/StateEnum.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-50" href="development/dotnet/api-reference/index.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-51" href="development/dotnet/api-reference/AsyncMethods/AdjustRudderAsync.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-52" href="development/dotnet/api-reference/AsyncMethods/DriveAsync.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-53" href="development/dotnet/api-reference/AsyncMethods/InitializeAsync.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-54" href="development/dotnet/api-reference/Methods/AdjustRudder.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-55" href="development/dotnet/api-reference/Methods/CalculateSpatium.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-56" href="development/dotnet/api-reference/Methods/CancelAction.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-57" href="development/dotnet/api-reference/Methods/Drive.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-58" href="development/dotnet/api-reference/Methods/GoArcVA.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-59" href="development/dotnet/api-reference/Methods/GoArcVS.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-60" href="development/dotnet/api-reference/Methods/GoArcVT.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-61" href="development/dotnet/api-reference/Methods/GoArcWA.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-62" href="development/dotnet/api-reference/Methods/GoArcWS.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-63" href="development/dotnet/api-reference/Methods/GoArcWT.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-64" href="development/dotnet/api-reference/Methods/GoStraight.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-65" href="development/dotnet/api-reference/Methods/Initialize.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-66" href="development/dotnet/api-reference/Methods/Odometry.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-67" href="development/dotnet/api-reference/Methods/Parameters.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-68" href="development/dotnet/api-reference/Methods/Paused.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-69" href="development/dotnet/api-reference/Methods/PhysicalTarget.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-70" href="development/dotnet/api-reference/Methods/ResetOdometry.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-71" href="development/dotnet/api-reference/Methods/Shutdown.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-72" href="development/dotnet/api-reference/Methods/ShutdownSafety.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-73" href="development/dotnet/api-reference/Methods/State.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-74" href="development/dotnet/api-reference/Methods/TurnAround.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-75" href="development/dotnet/api-reference/Methods/VelocityTarget.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-76" href="development/dotnet/api-reference/Methods/WheelsTarget.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-77" href="development/native/readme.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-78" href="development/native/samples.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-79" href="development/native/api-reference/API-design.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-80" href="development/native/api-reference/adjust_rudder.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-81" href="development/native/api-reference/calculate_spatium.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-82" href="development/native/api-reference/cancel_action.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-83" href="development/native/api-reference/chassis_state.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-84" href="development/native/api-reference/check_state.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-85" href="development/native/api-reference/delay.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-86" href="development/native/api-reference/drive.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-87" href="development/native/api-reference/drive_physical.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-88" href="development/native/api-reference/drive_spatial.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-89" href="development/native/api-reference/drive_timing.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-90" href="development/native/api-reference/drive_velocity.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-91" href="development/native/api-reference/drive_wheels.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-92" href="development/native/api-reference/get_default_parameter.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-93" href="development/native/api-reference/get_odometry.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-94" href="development/native/api-reference/get_parameter.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-95" href="development/native/api-reference/go_arc_va.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-96" href="development/native/api-reference/go_arc_vs.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-97" href="development/native/api-reference/go_arc_vt.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-98" href="development/native/api-reference/go_arc_wa.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-99" href="development/native/api-reference/go_arc_ws.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-100" href="development/native/api-reference/go_arc_wt.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-101" href="development/native/api-reference/go_straight.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-102" href="development/native/api-reference/go_straight_timing.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-103" href="development/native/api-reference/index.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-104" href="development/native/api-reference/initialize.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-105" href="development/native/api-reference/is_paused.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-106" href="development/native/api-reference/lock.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-107" href="development/native/api-reference/odometry.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-108" href="development/native/api-reference/parameter_id.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-109" href="development/native/api-reference/pause.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-110" href="development/native/api-reference/reset_odometry.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-111" href="development/native/api-reference/reset_parameter.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-112" href="development/native/api-reference/result.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-113" href="development/native/api-reference/result_operator_bool.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-114" href="development/native/api-reference/resume.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-115" href="development/native/api-reference/serial_ports.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-116" href="development/native/api-reference/set_parameter.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-117" href="development/native/api-reference/shutdown.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-118" href="development/native/api-reference/turn_around.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-119" href="development/native/api-reference/turn_around_timing.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-120" href="development/native/api-reference/unlock.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-121" href="development/native/vs_tutorial/doc.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-122" href="development/ros/CanBusMessage.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-123" href="development/ros/CanBusService.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-124" href="development/ros/ControlPrinciple.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-125" href="development/ros/readme.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-126" href="introduction/notice.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-127" href="introduction/parameters.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-128" href="introduction/services-and-supports.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-129" href="quick_start_tutorial/doc.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-130" href="user-guide/using-controller.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-131" href="user-guide/using-ros.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-132" href="user-guide/using-pm1-starter/doc.xhtml" media-type="application/xhtml+xml" />
+  </manifest>
+  <spine toc="ncx" page-progression-direction="ltr">
+    <itemref idref="epub-1" />
+    <itemref idref="epub-129" />
+    <itemref idref="epub-127" />
+    <itemref idref="epub-126" />
+    <itemref idref="epub-128" />
+    <itemref idref="epub-130" />
+    <itemref idref="epub-132" />
+    <itemref idref="epub-131" />
+    <itemref idref="epub-77" />
+    <itemref idref="epub-78" />
+    <itemref idref="epub-103" />
+    <itemref idref="epub-43" />
+    <itemref idref="epub-44" />
+    <itemref idref="epub-50" />
+    <itemref idref="epub-125" />
+    <itemref idref="epub-0" />
+    <itemref idref="epub-42" linear="no" />
+    <itemref idref="epub-45" linear="no" />
+    <itemref idref="epub-46" linear="no" />
+    <itemref idref="epub-47" linear="no" />
+    <itemref idref="epub-48" linear="no" />
+    <itemref idref="epub-49" linear="no" />
+    <itemref idref="epub-51" linear="no" />
+    <itemref idref="epub-52" linear="no" />
+    <itemref idref="epub-53" linear="no" />
+    <itemref idref="epub-54" linear="no" />
+    <itemref idref="epub-55" linear="no" />
+    <itemref idref="epub-56" linear="no" />
+    <itemref idref="epub-57" linear="no" />
+    <itemref idref="epub-58" linear="no" />
+    <itemref idref="epub-59" linear="no" />
+    <itemref idref="epub-60" linear="no" />
+    <itemref idref="epub-61" linear="no" />
+    <itemref idref="epub-62" linear="no" />
+    <itemref idref="epub-63" linear="no" />
+    <itemref idref="epub-64" linear="no" />
+    <itemref idref="epub-65" linear="no" />
+    <itemref idref="epub-66" linear="no" />
+    <itemref idref="epub-67" linear="no" />
+    <itemref idref="epub-68" linear="no" />
+    <itemref idref="epub-69" linear="no" />
+    <itemref idref="epub-70" linear="no" />
+    <itemref idref="epub-71" linear="no" />
+    <itemref idref="epub-72" linear="no" />
+    <itemref idref="epub-73" linear="no" />
+    <itemref idref="epub-74" linear="no" />
+    <itemref idref="epub-75" linear="no" />
+    <itemref idref="epub-76" linear="no" />
+    <itemref idref="epub-79" linear="no" />
+    <itemref idref="epub-80" linear="no" />
+    <itemref idref="epub-81" linear="no" />
+    <itemref idref="epub-82" linear="no" />
+    <itemref idref="epub-83" linear="no" />
+    <itemref idref="epub-84" linear="no" />
+    <itemref idref="epub-85" linear="no" />
+    <itemref idref="epub-86" linear="no" />
+    <itemref idref="epub-87" linear="no" />
+    <itemref idref="epub-88" linear="no" />
+    <itemref idref="epub-89" linear="no" />
+    <itemref idref="epub-90" linear="no" />
+    <itemref idref="epub-91" linear="no" />
+    <itemref idref="epub-92" linear="no" />
+    <itemref idref="epub-93" linear="no" />
+    <itemref idref="epub-94" linear="no" />
+    <itemref idref="epub-95" linear="no" />
+    <itemref idref="epub-96" linear="no" />
+    <itemref idref="epub-97" linear="no" />
+    <itemref idref="epub-98" linear="no" />
+    <itemref idref="epub-99" linear="no" />
+    <itemref idref="epub-100" linear="no" />
+    <itemref idref="epub-101" linear="no" />
+    <itemref idref="epub-102" linear="no" />
+    <itemref idref="epub-104" linear="no" />
+    <itemref idref="epub-105" linear="no" />
+    <itemref idref="epub-106" linear="no" />
+    <itemref idref="epub-107" linear="no" />
+    <itemref idref="epub-108" linear="no" />
+    <itemref idref="epub-109" linear="no" />
+    <itemref idref="epub-110" linear="no" />
+    <itemref idref="epub-111" linear="no" />
+    <itemref idref="epub-112" linear="no" />
+    <itemref idref="epub-113" linear="no" />
+    <itemref idref="epub-114" linear="no" />
+    <itemref idref="epub-115" linear="no" />
+    <itemref idref="epub-116" linear="no" />
+    <itemref idref="epub-117" linear="no" />
+    <itemref idref="epub-118" linear="no" />
+    <itemref idref="epub-119" linear="no" />
+    <itemref idref="epub-120" linear="no" />
+    <itemref idref="epub-121" linear="no" />
+    <itemref idref="epub-122" linear="no" />
+    <itemref idref="epub-123" linear="no" />
+    <itemref idref="epub-124" linear="no" />
+  </spine>
+  <guide>
+    <reference type="toc" title="Table of Contents" href="index.xhtml" />
+  </guide>
+</package>
