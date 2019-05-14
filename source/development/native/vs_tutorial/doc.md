@@ -45,10 +45,6 @@
    	{
    	    std::cout << "connected to " << result.value << std::endl;
    	    unlock();                   // 解锁
-   	    while (check_state() != chassis_state::unlocked)
-   	    {
-   	        delay(0.1);
-   	    }
    	    std::cout << "moving..." << std::endl;
    	    turn_around(0.25, 1.57);    // 以0.25rad/s的速度原地转90°
    	    shutdown();                 // 断开连接

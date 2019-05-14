@@ -6,9 +6,9 @@
 
 软件与 PM1 成功连接之后，可以控制车辆进行直行、转弯以及原地转向动作，也可以使用虚拟摇杆或键盘方向键对车辆进行连续控制。
 
-软件开源，可[下载](https://github.com/autolaborcenter/pm1_demo/releases)或[查看源码](https://github.com/autolaborcenter/pm1_demo/releases)。
+软件开源，可[下载](https://github.com/autolaborcenter/PM1Starter/releases)或[查看源码](https://github.com/autolaborcenter/PM1Starter)。
 
-运行环境：仅支持 Windows（Win7 或以上）。
+运行环境：Windows（支持 Win7 及以上）。
 
 软件主界面如下图所示：
 
