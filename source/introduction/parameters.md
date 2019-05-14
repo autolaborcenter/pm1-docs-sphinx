@@ -1,1 +1,69 @@
 # 性能参数
+
+
+<table>
+	<tr>
+		<td>尺寸</td>
+		<td></td>
+		<td>净重</td>
+		<td></td>
+    <td>负载</td>
+		<td>80Kg</td>
+	</tr>
+  <tr>
+		<td>最大线速度</td>
+    <td>1m/s</td>
+    <td>最大角速度</td>
+    <td>5rad/s</td>
+    <td>续航时间</td>
+    <td>4h</td>
+	</tr>
+  <tr>
+		<td>适用地形</td>
+    <td>水泥、瓷砖、沥青、土地、草地</td>
+    <td>垂直越障能力</td>
+    <td>8cm</td>
+    <td>爬坡能力</td>
+    <td>30°</td>
+	</tr>
+	<tr>
+		<td>电池</td>
+		<td>2*12V铅酸蓄电池</td>
+    <td>电池容量</td>
+		<td>24V 12AH</td>
+		<td>充电功率</td>
+		<td>65W (max)</td>
+	</tr>
+  <tr>
+		<td>电量统计</td>
+		<td>高精度库仑计</td>
+    <td>辅助电源</td>
+		<td>1*20V-29V/3A</td>
+    <td>控制方式</td>
+		<td>手柄/串口</td>
+	</tr>
+  <tr>
+		<td>驱动方式</td>
+    <td>2驱</td>
+    <td>转向方式</td>
+    <td>差速+主动转向</td>
+    <td>结构</td>
+    <td>三轮（2个驱动轮+1个主动转向轮）</td>
+	</tr>
+  <tr>
+		<td>外部通信</td>
+    <td>RS232 / DB9</td>
+    <td>内部协议</td>
+    <td>CAN</td>
+    <td>编码器精度</td>
+    <td>400线（软件4倍频）</td>
+	</tr>
+  <tr>
+		<td>闭环控制频率</td>
+    <td>50Hz</td>
+    <td>手柄通讯</td>
+    <td>2.4GHz无线通信</td>
+    <td>遥控距离</td>
+    <td>空旷10m</td>
+	</tr>
+</table>
