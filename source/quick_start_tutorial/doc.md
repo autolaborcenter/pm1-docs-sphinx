@@ -45,7 +45,7 @@
 
 ![](imgs/gamepad_quick_start.gif)
 
-> 更多手柄相关信息请参考[手柄遥控指南](../user-guide/using-gamepad/using-gamepad.md)。
+> 更多手柄相关信息请参考[手柄遥控指南](../user-guide/using-gamepad/doc.md)。
 
 <a name="PM1 Starter 软件控制"></a>
 
