@@ -22,7 +22,7 @@
 .. toctree::
    :maxdepth: 1
 
-   user-guide/using-controller
+   user-guide/using-gamepad/doc
    user-guide/using-pm1-starter/doc
    user-guide/using-ros
 
