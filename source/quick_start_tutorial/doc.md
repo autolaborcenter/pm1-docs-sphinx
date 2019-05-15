@@ -35,7 +35,7 @@
 
   * 禁止将 PM1 的手柄接收器安装在任何不属于 PM1 的地方，哪都不行
     
-> 更多安全相关信息请参考[安全须知](../introduction/notice.md)。
+> 更多安全相关信息请参考[安全须知](../introduction/notice)。
 
 <a name="无线手柄控制"></a>
 
@@ -45,7 +45,7 @@
 
 ![](imgs/gamepad_quick_start.gif)
 
-> 更多手柄相关信息请参考[手柄遥控指南](../user-guide/using-gamepad/doc.md)。
+> 更多手柄相关信息请参考[手柄遥控指南](../user-guide/using-gamepad/doc)。
 
 <a name="PM1 Starter 软件控制"></a>
 
