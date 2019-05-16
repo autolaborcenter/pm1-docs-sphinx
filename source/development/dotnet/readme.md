@@ -6,6 +6,8 @@
 
 一个基于 SDK 和 WPF（.Net Framework） 的 Windows 应用存在于 SDK 的解决方案中，作为使用 SDK 的示例，同时也可以用于测试 PM1 底盘的性能。不同于 PM1 Starter，这个应用程序可能快速地更新，我们不保证其随时可用。
 
+<video src="../../_static/nuget.mp4" width="680" height="383" controls="controls"></video>
+
 ## 环境要求
 
 支持 .Net 平台的目的是加速 Windows 桌面端的开发，而非完全拥抱 .Net 生态，因此目前 SDK 依赖于 Native SDK，受到 Native SDK 的实现限制，仅支持 Windows 平台。这一限制稍后将通过对 Native SDK 的扩展或重构来消除。
