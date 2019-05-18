@@ -38,11 +38,11 @@ git clone https://github.com/autolaborcenter/pm1-docs-sphinx.git
 
    编译好的静态网站在 `build/html` 目录下。
 
-### 贡献指南
+## 贡献指南
 
 **推送或创建合并申请前，仔细阅读下列要求，并在本地编译，预览效果。**
 
-#### makedown 格式要求
+### makedown 格式要求
 
 * 使用格式
 
