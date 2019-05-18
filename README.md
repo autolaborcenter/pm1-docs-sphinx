@@ -2,51 +2,41 @@
 
 本工程是 PM1 底盘官方使用手册的 **`Sphinx` 工程**。
 
+### 克隆项目
+
+```shell
+git clone https://github.com/autolaborcenter/pm1-docs-sphinx.git
+```
+
 ## 文件说明
 
 * `source` 目录下保存了手册的 markdown 版本。
 
 ## 编译
 
-本工程需要 `Sphinx` 环境来编译。
-
-### 安装 `Sqhinx` 环境
+本工程需要 python3/pip3 环境来编译。
 
 1. 安装 [python](https://www.python.org/) 环境（version ≥ 3.5）
 
    在最新版 [3.7.3](https://www.python.org/downloads/release/python-373/) 发布页选择你的平台。
 
-2. 安装 [`Sphinx`](https://www.sphinx-doc.org/) 环境
+2. 安装 [`Sphinx`](https://www.sphinx-doc.org) 环境及扩展
+
+   进入项目文件夹，执行：
 
    ```shell
-   pip install -U Sphinx
+   make install_environment
    ```
 
-3. 安装 `Sphinx` 扩展
+3. 编译
+
+   进入项目文件夹，执行：
 
    ```shell
-   pip install --upgrade recommonmark sphinx-markdown-tables sphinx_rtd_theme
+   make clean html
    ```
 
-   * `recommonmark` - [markdown 支持](https://www.sphinx-doc.org/en/master/usage/markdown.html?highlight=markdown)
-   * `sphinx-markdown-tables` - [markdown 表格支持](https://pypi.org/project/sphinx-markdown-tables/)
-   * `sphinx_rtd_theme` - [sphinx_rtd_theme 主题](https://sphinx-rtd-theme.readthedocs.io/en/stable/)
-
-### 克隆项目
-
-```shell
-git clone https://github.com/autolaborcenter/pm1-doc-sphinx.git
-```
-
-###  编译
-
-进入项目文件夹，执行：
-
-```shell
-sphinx-build -M html source build
-```
-
-编译好的静态网站在 `build/html` 目录下。
+   编译好的静态网站在 `build/html` 目录下。
 
 ### 贡献指南
 
