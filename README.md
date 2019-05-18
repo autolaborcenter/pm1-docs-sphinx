@@ -31,8 +31,8 @@
    ```
 
    * `recommonmark` - [markdown 支持](https://www.sphinx-doc.org/en/master/usage/markdown.html?highlight=markdown)
-   * `sphinx-markdown-tables` - markdown 表格支持
-   * `sphinx_rtd_theme` - sphinx_rtd_theme 主题
+   * `sphinx-markdown-tables` - [markdown 表格支持](https://pypi.org/project/sphinx-markdown-tables/)
+   * `sphinx_rtd_theme` - [sphinx_rtd_theme 主题](https://sphinx-rtd-theme.readthedocs.io/en/stable/)
 
 
 
