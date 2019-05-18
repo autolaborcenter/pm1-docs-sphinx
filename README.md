@@ -6,8 +6,6 @@
 
 * `source` 目录下保存了手册的 markdown 版本。
 
-* `make.bat` 用于将源文件编译成 `html` 等格式。
-
 ## 编译
 
 本工程需要 `Sphinx` 环境来编译。
