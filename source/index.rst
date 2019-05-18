@@ -59,56 +59,52 @@ Autolabor PM1 文档主页
 
 欢迎查看 Autolabor PM1 官方文档！
 
-如果这是您第一次使用 Autolabor PM1 机器人底盘，我们建议您从这里开始：
+如果这是您第一次使用 Autolabor PM1 机器人底盘，我们建议您从 :doc:`quick_start_tutorial/doc` 开始。
 
-:doc:`quick_start_tutorial/doc`
+----
 
 要深入了解有关机器人底盘的信息，查看下列文档：
 
-:doc:`introduction/parameters`
+- :doc:`introduction/parameters`
 
-:doc:`introduction/notice`
+- :doc:`introduction/notice`
 
-:doc:`introduction/services-and-supports`
+- :doc:`introduction/services-and-supports`
 
-有关使用 PM1 的各种方法，下列文档给出了最为详细的说明： 
+----
 
-:doc:`user-guide/using-gamepad/doc`
+有关使用 PM1 的各种方法，下列文档给出了最为详尽的说明： 
 
-:doc:`user-guide/using-pm1-starter/doc`
+- :doc:`user-guide/using-gamepad/doc`
 
-:doc:`user-guide/using-ros`
+- :doc:`user-guide/using-pm1-starter/doc`
+
+- :doc:`user-guide/using-ros`
+
+----
 
 如果您是开发者，您可能更为关心下列主题：
 
-要使用 C++ 开发原生应用程序，查看下列主题：
+- 要使用 C++ 开发原生应用程序，查看下列主题：
 
-:doc:`development/native/readme`
+  - :doc:`development/native/readme`
 
-:doc:`development/native/samples`
+  - :doc:`development/native/samples`
 
-:doc:`development/native/api-reference/index`
+  - :doc:`development/native/api-reference/index`
 
-如果您对 C++ 语言尚不了解，下面这个网站可能对您有帮助：
+  如果您对 C++ 语言尚不了解，`C++ 参考手册 <https://zh.cppreference.com/w/首页>`_ 可能对您有帮助。
+  
+- 要使用 C# 开发 .Net 应用程序，查看下列主题：
 
-`C++ 参考手册 <https://zh.cppreference.com/w/首页>`_
+  - :doc:`development/dotnet/readme`
 
-要使用 C# 开发 .Net 应用程序，查看下列主题：
+  - :doc:`development/dotnet/samples`
 
-:doc:`development/dotnet/readme`
+  - :doc:`development/dotnet/api-reference/index`
 
-:doc:`development/dotnet/samples`
+  微软提供的 `.Net 指南 <https://docs.microsoft.com/zh-cn/dotnet/standard/>`_ 和 `C# 指南 <https://docs.microsoft.com/zh-cn/dotnet/csharp/>`_ 将帮助您了解这种迷人的技术。
 
-:doc:`development/dotnet/api-reference/index`
+- 要开发 ROS，查看下列主题：
 
-如果您对 .Net 平台尚不了解，官方文档将引导您入门：
-
-`.Net 指南 <https://docs.microsoft.com/zh-cn/dotnet/standard/>`_
-
-如果您对 C# 语言尚不了解，官方文档将引导您入门：
-
-`C# 指南 <https://docs.microsoft.com/zh-cn/dotnet/csharp/>`_
-
-要开发 ROS，查看下列主题：
-
-:doc:`development/ros/readme`
+  - :doc:`development/ros/readme`

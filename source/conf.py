@@ -14,6 +14,8 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
+import sphinx_rtd_theme
+
 # -- Project information -----------------------------------------------------
 
 project = 'Autolabor PM1'
@@ -32,7 +34,7 @@ extensions = [
 
 source_suffix = {
     '.rst': 'restructuredtext',
-    '.md' : 'markdown'
+    '.md': 'markdown'
 }
 
 # Add any paths that contain templates here, relative to this directory.
@@ -55,8 +57,13 @@ exclude_patterns = []
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-import sphinx_rtd_theme
 html_theme = 'sphinx_rtd_theme'
+html_context = {
+    'display_github': True,
+    'github_user': 'autolaborcenter',
+    'github_repo': 'pm1-docs-sphinx',
+    'github_version': 'master/source/'
+}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -69,8 +76,8 @@ html_static_path = ['_static']
 # github_doc_root = 'https://github.com/rtfd/recommonmark/tree/master/doc/'
 # def setup(app):
 #     app.add_config_value(
-#         'recommonmark_config', 
-#         { 'enable_auto_toc_tree': True }, 
+#         'recommonmark_config',
+#         { 'enable_auto_toc_tree': True },
 #         True
 #     )
 #     app.add_transform(AutoStructify)
