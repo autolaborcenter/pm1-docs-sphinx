@@ -2,13 +2,13 @@
 
 本工程是 PM1 底盘官方使用手册的 **`Sphinx` 工程**。
 
-### 克隆项目
+## 克隆项目
 
 ```shell
 git clone https://github.com/autolaborcenter/pm1-docs-sphinx.git
 ```
 
-## 文件说明
+### 文件说明
 
 * `source` 目录下保存了手册的 markdown 版本。
 
