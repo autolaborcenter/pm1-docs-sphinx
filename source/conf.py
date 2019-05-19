@@ -15,6 +15,7 @@
 # sys.path.insert(0, os.path.abspath('.'))
 
 import sphinx_rtd_theme
+# from recommonmark.transform import AutoStructify
 
 # -- Project information -----------------------------------------------------
 
@@ -36,6 +37,17 @@ source_suffix = {
     '.rst': 'restructuredtext',
     '.md': 'markdown'
 }
+
+
+# def setup(app):
+#     app.add_config_value(
+#         'recommonmark_config',
+#         {
+#             'enable_eval_rst': True,
+#             'enable_auto_doc_ref': True,
+#         },
+#         True)
+#     app.add_transform(AutoStructify)
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['page_templates']

@@ -25,9 +25,9 @@
 
 依赖要求基于 SDK 构建的其他库或应用程序必须高于上表所示的版本，但我们推荐使用 .Net Core 2.0，或 .Net Framework 4.6.1，或更高的版本，以保证完整的开发体验和丰富的资料支持，与 Native SDK 相同，这需要 **Visual Studio 2015** 或更高版本开发，受 Native SDK 约束，需要 **Windows 7** 或更高版本运行。
 
-## 体验
+## 开发体验
 
-总体说来，SDK 是 Native SDK 的超集，查看 <a href="../native/readme.html#体验">Native SDK 的体验</a>了解更多细节。
+总体说来，SDK 是 Native SDK 的超集，查看 <a href=../native/readme.html#开发体验>Native SDK 的开发体验</a>了解更多细节。
 
 Native SDK 的每一个函数都在 SDK 中存在对应版本，但可能以更 C# 的方式实现（如用*设值器*、*取值器*替代 `get_xxx()`、`set_xxx()` 函数）。由于 C# 不支持顶层函数，这些函数位于一个 [`Methods` 静态类](api-reference/Methods-Class)中。
 

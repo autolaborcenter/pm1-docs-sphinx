@@ -77,10 +77,6 @@
 										"uri": "development/native/readme"
 									},
 									{
-										"name": "PM1 原生 API 使用范例",
-										"uri": "development/native/samples"
-									},
-									{
 										"name": "PM1 原生 API 参考",
 										"uri": "development/native/api-reference/index"
 									}
@@ -92,10 +88,6 @@
 									{
 										"name": "PM1 .Net 应用程序开发指南",
 										"uri": "development/dotnet/readme"
-									},
-									{
-										"name": "PM1 .Net API 使用范例",
-										"uri": "development/dotnet/samples"
 									},
 									{
 										"name": "PM1 .Net API 参考",
