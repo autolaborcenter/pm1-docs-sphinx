@@ -35,6 +35,7 @@ Autolabor PM1 文档主页
    :glob:
    :caption: 二次开发 - 原生（C++）
 
+   development/native/new-users
    development/native/readme
    development/native/samples
    development/native/api-reference/index
@@ -93,7 +94,7 @@ Autolabor PM1 文档主页
 
   - :doc:`development/native/api-reference/index`
 
-  如果您对 C++ 语言尚不了解，`C++ 参考手册 <https://zh.cppreference.com/w/首页>`_ 可能对您有帮助。
+  如果您对原生应用、C++ 以及相关技术心存疑虑，浏览 :doc:`development/native/new-users` 将带给您启发。
   
 - 要使用 C# 开发 .Net 应用程序，查看下列主题：
 

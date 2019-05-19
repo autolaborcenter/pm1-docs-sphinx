@@ -1,4 +1,4 @@
-# PM1 Starter 使用说明
+# 使用 PM1 Starter
 
 ## 软件概述
 
