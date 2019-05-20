@@ -1,0 +1,113 @@
+{
+	"_readme": [
+		"注：uri 必须保障唯一性，若有重复引用，请使用 rewrite 注册新的 uri",
+		"由于设计缺陷，rewrite 时只能自定义最后一级路径",
+		"uri 格式 1 - 相对文档：a/b/c",
+		"uri 格式 2 - 相对站内：/usedoc/ap1/a/b/c",
+		"uri 格式 3 - 绝对地址：http://www.baidu.com",
+		"_readme本身并没有什么软用"
+	],
+	"index": "quick_start_tutorial/doc",
+	"rewrite": {
+		"quick_start_tutorial/index": "quick_start_tutorial/doc"
+	},
+	"plugin": {
+		"emoji": false,
+		"taskList": true,
+		"tex": true,
+		"flowChart": true,
+		"sequenceDiagram": true
+	},
+	"menu": {
+		"toc": {
+			"startLevel": "2",
+			"overLevel": "2"
+		},
+		"items": [
+			{
+				"name": "Autolabor PM1",
+				"isOpen": true,
+				"items": [
+					{
+						"name": "PM1 快速入门指南",
+						"uri": "quick_start_tutorial/doc"
+					},
+					{
+						"name": "了解 Autolabor PM1",
+						"items": [
+							{
+								"name": "性能参数",
+								"uri": "introduction/parameters"
+							},
+							{
+								"name": "安全须知",
+								"uri": "introduction/notice"
+							},
+							{
+								"name": "服务与支持",
+								"uri": "introduction/services-and-supports"
+							}
+						]
+					},
+					{
+						"name": "开始使用",
+						"items": [
+							{
+								"name": "使用手柄遥控",
+								"uri": "user-guide/using-controller"
+							},
+							{
+								"name": "PM1 Starter 使用说明",
+								"uri": "user-guide/using-pm1-starter/doc"
+							},
+							{
+								"name": "使用 ROS",
+								"uri": "user-guide/using-ros"
+							}
+						]
+					},
+					{
+						"name": "二次开发",
+						"items": [
+							{
+								"name": "原生（C++）",
+								"items": [
+									{
+										"name": "PM1 原生应用程序开发指南",
+										"uri": "development/native/readme"
+									},
+									{
+										"name": "PM1 原生 API 参考",
+										"uri": "development/native/api-reference/index"
+									}
+								]
+							},
+							{
+								"name": ".Net（C#）",
+								"items": [
+									{
+										"name": "PM1 .Net 应用程序开发指南",
+										"uri": "development/dotnet/readme"
+									},
+									{
+										"name": "PM1 .Net API 参考",
+										"uri": "development/dotnet/api-reference/index"
+									}
+								]
+							},
+							{
+								"name": "ROS（C++）",
+								"items": [
+									{
+										"name": "Autolabor ROS 驱动模块",
+										"uri": "development/ros/readme"
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

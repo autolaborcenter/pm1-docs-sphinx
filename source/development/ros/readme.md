@@ -2,7 +2,7 @@
 
 ## 1. 介绍
 
-Autolabor ROS驱动模块包含 **CANBus 驱动**和 **Autolabor PM1 底盘驱动**，其主要功能包括与Autolabor_CANbus模块通信，并通过线速度和角速度控制Autolabor PM1底盘行驶。
+Autolabor ROS 驱动模块包含 **CANBus 驱动**和 **Autolabor PM1 底盘驱动**，其主要功能包括与Autolabor_CANbus 模块通信，并通过线速度和角速度控制 Autolabor PM1 底盘行驶。
 
 #### 特性
 
