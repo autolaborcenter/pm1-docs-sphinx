@@ -10,15 +10,19 @@ C# 一向是一种发展极快的语言，微软拥抱开源的新策略无疑�
 
 由于 .Net SDK 本身基于 Native SDK，.Net 平台无法提供更强的跨平台能力。但基于 Nuget 的包管理还是允许您不必手动管理平台问题。
 
-由于 Native SDK 暂时不提供对 Linux 的支持，如果您必须基于 Linux 的某个发行版开发，您应该选择 ROS。
-
 ## 我从未使用过 PM1 .Net SDK，之前也没有编写过 C# 代码，该从哪里开始？
 
 如果您对 .Net 平台、C# 语法或 Nuget 包管理器尚不了解，我们推荐您浏览微软的官方文档：
 
 * [.Net 指南](https://docs.microsoft.com/zh-cn/dotnet/standard/)
 * [C# 指南](https://docs.microsoft.com/zh-cn/dotnet/csharp/)
-* [快速入门：在 Visual Studio 中安装和使用包](https://docs.microsoft.com/zh-cn/nuget/quickstart/install-and-use-a-package-in-visual-studio)
+* Nuget 包管理
+  * [快速入门：在 Visual Studio 中安装和使用包](https://docs.microsoft.com/zh-cn/nuget/quickstart/install-and-use-a-package-in-visual-studio)
+
+  或
+  
+  * [安装 NuGet 客户端工具](https://docs.microsoft.com/zh-cn/nuget/install-nuget-client-tools)
+  * [快速入门：使用 dotnet CLI 安装并使用包](https://docs.microsoft.com/zh-cn/nuget/quickstart/install-and-use-a-package-using-the-dotnet-cli)
 
 > 此时，您还需要安装必要的环境才能开始开发。我们建议您不必费心选择，直接安装 [Visual Studio 2019 Community](https://visualstudio.microsoft.com/zh-hans/downloads/) 即可。`.Net 桌面开发` 是必选模块。
 
