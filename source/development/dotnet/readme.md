@@ -12,11 +12,11 @@
 
 下面这个视频展示了开发 .Net 控制台应用程序的最简示例：
 
-<video src="../../_static/nuget.mp4" width="680" height="383" controls="controls"></video>
+<video src="../../_static/nuget.mp4" width="100%" height="100%" controls="controls"></video>
 
 如果您使用 Linux，下面这个视频将展示 .Net 工具链强大的平台无关性：
 
-<video src="../../_static/nuget-linux.mp4" width="680" height="383" controls="controls"></video>
+<video src="../../_static/nuget-linux.mp4" width="100%" height="100%" controls="controls"></video>
 
 ## 环境要求
 
