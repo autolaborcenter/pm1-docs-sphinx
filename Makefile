@@ -3,6 +3,7 @@ SPHINX_OPTS  =
 SPHINX_BUILD = sphinx-build
 SOURCE_DIR   = source
 BUILD_DIR    = build
+PAGES_DIR    = docs
 
 # Put it first so that "make" without argument is like "make help".
 help:
@@ -19,4 +20,10 @@ install_environment:
 	pip install -U Sphinx recommonmark sphinx-markdown-tables sphinx_rtd_theme
 
 clean:
-	-rm -rf $(BUILD_DIR)
+	rm -rf $(BUILD_DIR)
+
+publish:
+	rm -rf $(PAGES_DIR)
+	mkdir $(PAGES_DIR)
+	cp -r $(BUILD_DIR)/html/. $(PAGES_DIR)
+	touch $(PAGES_DIR)/.nojekyll
