@@ -1,0 +1,274 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>在 Visual Studio 中配置 PM1 SDK &mdash; Autolabor PM1  文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../../../genindex.html" />
+    <link rel="search" title="搜索" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> Autolabor PM1
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">主页</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../index.html">Autolabor PM1 文档主页</a></li>
+</ul>
+<p class="caption"><span class="caption-text">了解 Autolabor PM1</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../introduction/notice.html">安全须知</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../introduction/parameters.html">性能参数</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../introduction/services-and-supports.html">服务与支持</a></li>
+</ul>
+<p class="caption"><span class="caption-text">开始使用</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../user-guide/using-gamepad/doc.html">使用无线手柄遥控</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../user-guide/using-pm1-starter/doc.html">使用 PM1 Starter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../user-guide/using-ros/doc.html">使用 ROS</a></li>
+</ul>
+<p class="caption"><span class="caption-text">二次开发 - 原生（C++）</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../readme.html">PM1 原生应用程序开发指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api-reference/index.html">PM1 原生 API 参考</a></li>
+</ul>
+<p class="caption"><span class="caption-text">二次开发 - .Net（C#）</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../dotnet/readme.html">PM1 .Net 应用程序开发指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dotnet/api-reference/index.html">PM1 .Net API 参考</a></li>
+</ul>
+<p class="caption"><span class="caption-text">二次开发 - ROS（C++）</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ros/readme.html">Autolabor ROS 驱动模块</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Autolabor PM1</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>在 Visual Studio 中配置 PM1 SDK</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/autolaborcenter/pm1-docs-sphinx/blob/master/source/development/native/vs_tutorial/doc.md" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="visual-studio-pm1-sdk">
+<h1>在 Visual Studio 中配置 PM1 SDK<a class="headerlink" href="#visual-studio-pm1-sdk" title="永久链接至标题">¶</a></h1>
+<ol>
+<li><p>创建一个 C++ 空项目（以 VS2017 为例）</p>
+<p>打开 VS，依次点击菜单“文件”-&gt;“新建”-&gt;“项目”，弹出新建项目窗口。在新建项目窗口中选择 “Visual C++” -&gt; “其他” -&gt; “空项目” 创建项目，如下图所示。</p>
+<blockquote>
+<div><p>注意：如果找不到此项目类型，请检查 VS 中是否已经安装 C++。</p>
+</div></blockquote>
+<p><img alt="../../../_images/create.png" src="../../../_images/create.png" /></p>
+<p><img alt="../../../_images/create1.png" src="../../../_images/create1.png" /></p>
+</li>
+<li><p>下载 SDK 文件</p>
+<p>访问 PM1 SDK 的 <a class="reference external" href="https://github.com/autolaborcenter/pm1_sdk/releases">GitHub 发布页</a>，下载最新版本的头文件（pm1_sdk.h）与静态库文件（pm1_sdk.lib、pm1_sdk_debug.lib），并将文件放置到项目路径下，按照上一步的项目名称位置，文件路径为 <code class="docutils literal notranslate"><span class="pre">C:\Users\user\source\repos\Project1\Project1</span></code>，如下图所示。</p>
+<p><img alt="../../../_images/download.png" src="../../../_images/download.png" /></p>
+</li>
+<li><p>添加测试代码并运行</p>
+<p>在解决方案资源管理器项目“源文件”项上右键“添加”-&gt;“新建项”，然后在弹出的添加新项窗口中选择 C++ 文件，添加一个源文件，如下图所示。</p>
+<p><img alt="../../../_images/add.png" src="../../../_images/add.png" /></p>
+<p><img alt="../../../_images/add1.png" src="../../../_images/add1.png" /></p>
+<p>然后在 <code class="docutils literal notranslate"><span class="pre">源.cpp</span></code> 中添加如下代码</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;pm1_sdk.h&quot;                 // 头文件</span><span class="cp"></span>
+<span class="k">using</span> <span class="k">namespace</span> <span class="n">autolabor</span><span class="o">::</span><span class="n">pm1</span><span class="p">;</span>      <span class="c1">// 命名空间</span>
+
+<span class="cp">#ifdef _DEBUG                        </span><span class="c1">// 静态库</span>
+<span class="cp">#pragma comment(lib, &quot;pm1_sdk_debug.lib&quot;)</span>
+<span class="cp">#else</span>
+<span class="cp">#pragma comment(lib, &quot;pm1_sdk.lib&quot;)</span>
+<span class="cp">#endif</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+	<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;initializing...&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+	<span class="k">auto</span> <span class="n">result</span> <span class="o">=</span> <span class="n">initialize</span><span class="p">();</span>     <span class="c1">// 初始化连接</span>
+	<span class="k">if</span> <span class="p">(</span><span class="n">result</span><span class="p">)</span>
+	<span class="p">{</span>
+	    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;connected to &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">result</span><span class="p">.</span><span class="n">value</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+	    <span class="n">unlock</span><span class="p">();</span>                   <span class="c1">// 解锁</span>
+	    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;moving...&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+	    <span class="n">turn_around</span><span class="p">(</span><span class="mf">0.25</span><span class="p">,</span> <span class="mf">1.57</span><span class="p">);</span>    <span class="c1">// 以0.25rad/s的速度原地转90°</span>
+	    <span class="n">shutdown</span><span class="p">();</span>                 <span class="c1">// 断开连接</span>
+	<span class="p">}</span>
+	<span class="k">else</span>
+	<span class="p">{</span>
+	    <span class="n">std</span><span class="o">::</span><span class="n">cerr</span> <span class="o">&lt;&lt;</span> <span class="n">result</span><span class="p">.</span><span class="n">error_info</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+	<span class="p">}</span>
+	<span class="n">system</span><span class="p">(</span><span class="s">&quot;pause&quot;</span><span class="p">);</span>
+	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>然后连接PM1点击运行测试代码</p>
+<p><img alt="../../../_images/run.png" src="../../../_images/run.png" /></p>
+</li>
+</ol>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Autolabor
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

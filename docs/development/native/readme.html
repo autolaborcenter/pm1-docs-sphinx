@@ -1,0 +1,262 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>PM1 原生应用程序开发指南 &mdash; Autolabor PM1  文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="PM1 原生 API 参考" href="api-reference/index.html" />
+    <link rel="prev" title="使用 ROS" href="../../user-guide/using-ros/doc.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Autolabor PM1
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">主页</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">Autolabor PM1 文档主页</a></li>
+</ul>
+<p class="caption"><span class="caption-text">了解 Autolabor PM1</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/notice.html">安全须知</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/parameters.html">性能参数</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/services-and-supports.html">服务与支持</a></li>
+</ul>
+<p class="caption"><span class="caption-text">开始使用</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../user-guide/using-gamepad/doc.html">使用无线手柄遥控</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user-guide/using-pm1-starter/doc.html">使用 PM1 Starter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user-guide/using-ros/doc.html">使用 ROS</a></li>
+</ul>
+<p class="caption"><span class="caption-text">二次开发 - 原生（C++）</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">PM1 原生应用程序开发指南</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">介绍</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">环境要求</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">开发体验</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api-reference/index.html">PM1 原生 API 参考</a></li>
+</ul>
+<p class="caption"><span class="caption-text">二次开发 - .Net（C#）</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../dotnet/readme.html">PM1 .Net 应用程序开发指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dotnet/api-reference/index.html">PM1 .Net API 参考</a></li>
+</ul>
+<p class="caption"><span class="caption-text">二次开发 - ROS（C++）</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ros/readme.html">Autolabor ROS 驱动模块</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Autolabor PM1</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>PM1 原生应用程序开发指南</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/autolaborcenter/pm1-docs-sphinx/blob/master/source/development/native/readme.md" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="pm1">
+<h1>PM1 原生应用程序开发指南<a class="headerlink" href="#pm1" title="永久链接至标题">¶</a></h1>
+<div class="section" id="id1">
+<h2>介绍<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<p>原生应用是 Autolabor PM1 支持的首要开发方式。.Net 平台上的 SDK 也依赖于原生 SDK。</p>
+<p>所谓<em>原生（Native）</em>，指的是不运行在任何虚拟机或程序框架中，而是编译到对应平台的机器码，仅依赖于操作系统即可执行的应用程序或程序库。典型的原生库常常是使用 C 或 C++ 编写，PM1 SDK 也是如此。</p>
+<p>如果您对原生应用、C++ 以及相关技术心存疑虑，浏览 <a class="reference internal" href="new-users.html"><span class="doc">PM1 原生应用程序初学者指南</span></a>将带给您启发。</p>
+<p>我们还提供了一些<a class="reference internal" href="samples.html"><span class="doc">示例</span></a>帮助您快速上手 PM1 Native SDK。</p>
+</div>
+<div class="section" id="id2">
+<h2>环境要求<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<p>编译 PM1 Native SDK 或加载静态库需要编译器实现 C++17 的一部分特性，这对应于 <strong>2015 或更高版本的 Visual Studio</strong>，或 <strong>GCC 7.1</strong> 版本以上。</p>
+<p>同时，SDK 还需要一些运行库，因此任何基于它构建的应用程序需要 <strong>Windows 7</strong> 以上才能运行。</p>
+<p>SDK 暂时仍不支持 Linux，但此支持性在计划内。</p>
+<p><a name=开发体验></a></p>
+</div>
+<div class="section" id="id3">
+<h2>开发体验<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<p>对于大部分不准备修改 SDK 源码的用户来说，它是一系列<em>顶层函数（top-level function）</em>——即不属于任何类的函数。这些函数用于与<strong>一台</strong> Autolabor PM1 底盘交互，或为交互逻辑提供支持。</p>
+<blockquote>
+<div><p>要使用 SDK 在一台计算机上控制多个底盘，可以启动多个进程，或者深入 SDK 内部，使用 <a class="reference external" href="https://github.com/autolaborcenter/pm1_sdk/blob/master/src/main/internal/chassis.hh"><code class="docutils literal notranslate"><span class="pre">autolabor::pm1::chassis</span></code> 类</a>。后者可能需要对 C++ 较为深入的了解并能够编译 C++ 工程。</p>
+</div></blockquote>
+<p>SDK 中的大部分函数需要与底盘建立<em>连接</em>，意思是说，打开并且独占一个串口资源，并且在使用期间保证连接的可用性。查看<a class="reference internal" href="api-reference/initialize.html"><span class="doc">“初始化”函数</span></a>了解详情。</p>
+<p>在连接期间，可以与底盘进行多种多样的数据交互，包括获取底盘上各种虚拟或实际传感器的读数以及控制机器人底盘行驶。</p>
+<p>最重要的虚拟传感器是<a class="reference internal" href="api-reference/odometry.html"><span class="doc">“里程计”</span></a>，这是测量机器人位姿变化的传感器。</p>
+<p>有两种方式控制机器人底盘行驶：基于<em>动作</em>的控制和<em>连续</em>的控制，<a class="reference internal" href="../concepts/drive.html"><span class="doc">这篇文档</span></a>揭示了细节。</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="api-reference/index.html" class="btn btn-neutral float-right" title="PM1 原生 API 参考" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../../user-guide/using-ros/doc.html" class="btn btn-neutral float-left" title="使用 ROS" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Autolabor
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

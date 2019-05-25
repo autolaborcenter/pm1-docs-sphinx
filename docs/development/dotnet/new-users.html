@@ -1,0 +1,252 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>PM1 .Net 应用初学者指南 &mdash; Autolabor PM1  文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Autolabor PM1
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">主页</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">Autolabor PM1 文档主页</a></li>
+</ul>
+<p class="caption"><span class="caption-text">了解 Autolabor PM1</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/notice.html">安全须知</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/parameters.html">性能参数</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/services-and-supports.html">服务与支持</a></li>
+</ul>
+<p class="caption"><span class="caption-text">开始使用</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../user-guide/using-gamepad/doc.html">使用无线手柄遥控</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user-guide/using-pm1-starter/doc.html">使用 PM1 Starter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user-guide/using-ros/doc.html">使用 ROS</a></li>
+</ul>
+<p class="caption"><span class="caption-text">二次开发 - 原生（C++）</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../native/readme.html">PM1 原生应用程序开发指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../native/api-reference/index.html">PM1 原生 API 参考</a></li>
+</ul>
+<p class="caption"><span class="caption-text">二次开发 - .Net（C#）</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="readme.html">PM1 .Net 应用程序开发指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api-reference/index.html">PM1 .Net API 参考</a></li>
+</ul>
+<p class="caption"><span class="caption-text">二次开发 - ROS（C++）</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ros/readme.html">Autolabor ROS 驱动模块</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Autolabor PM1</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>PM1 .Net 应用初学者指南</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/autolaborcenter/pm1-docs-sphinx/blob/master/source/development/dotnet/new-users.md" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="pm1-net">
+<h1>PM1 .Net 应用初学者指南<a class="headerlink" href="#pm1-net" title="永久链接至标题">¶</a></h1>
+<p>C# 一向是一种发展极快的语言，微软拥抱开源的新策略无疑进一步加速了 C# 的发展。PM1 .Net SDK 也确实用到一些较新的特性（例如<a class="reference external" href="https://docs.microsoft.com/zh-cn/dotnet/csharp/tuples">值元组</a>），但它们都是 C# 正式标准（任何实验性特性不会应用到 SDK 发布版本中）。我们也建议开发者跟紧语言的发展步伐，而不要让新特性成了开发的障碍。</p>
+<div class="section" id="id1">
+<h2>我注意到 PM1 有多种开发方式，我该选择开发 .Net 应用程序吗？<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<p>如果您习惯了托管资源、包含垃圾收集的语言或运行环境以及 C# 简洁的语法，您应该使用 .Net/C# 来开发。</p>
+<p>.Net 的非阻塞异步和更方便的异步 API 能极大简化您开发图形界面应用程序的工作量。</p>
+<p>由于 .Net SDK 本身基于 Native SDK，.Net 平台无法提供更强的跨平台能力。但基于 Nuget 的包管理还是允许您不必手动管理平台问题。</p>
+<p>由于 Native SDK 暂时不提供对 Linux 的支持，如果您必须基于 Linux 的某个发行版开发，您应该选择 ROS。</p>
+</div>
+<div class="section" id="pm1-net-sdk-c">
+<h2>我从未使用过 PM1 .Net SDK，之前也没有编写过 C# 代码，该从哪里开始？<a class="headerlink" href="#pm1-net-sdk-c" title="永久链接至标题">¶</a></h2>
+<p>如果您对 .Net 平台、C# 语法或 Nuget 包管理器尚不了解，我们推荐您浏览微软的官方文档：</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.microsoft.com/zh-cn/dotnet/standard/">.Net 指南</a></p></li>
+<li><p><a class="reference external" href="https://docs.microsoft.com/zh-cn/dotnet/csharp/">C# 指南</a></p></li>
+<li><p><a class="reference external" href="https://docs.microsoft.com/zh-cn/nuget/quickstart/install-and-use-a-package-in-visual-studio">快速入门：在 Visual Studio 中安装和使用包</a></p></li>
+</ul>
+<blockquote>
+<div><p>此时，您还需要安装必要的环境才能开始开发。我们建议您不必费心选择，直接安装 <a class="reference external" href="https://visualstudio.microsoft.com/zh-hans/downloads/">Visual Studio 2019 Community</a> 即可。<code class="docutils literal notranslate"><span class="pre">.Net</span> <span class="pre">桌面开发</span></code> 是必选模块。</p>
+</div></blockquote>
+</div>
+<div class="section" id="c-pm1-net-sdk">
+<h2>我已经了解 C# 了，该怎么使用 PM1 .Net SDK 呢？<a class="headerlink" href="#c-pm1-net-sdk" title="永久链接至标题">¶</a></h2>
+<p>我们提供了一系列<a class="reference internal" href="samples.html"><span class="doc">示例</span></a>帮助您上手 PM1 Native SDK 的二次开发。</p>
+</div>
+<div class="section" id="id2">
+<h2>参考资料<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="api-reference/index.html"><span class="doc">API 参考</span></a>对大部分开发者来说是必不可少的。</p></li>
+<li><p>即使您已经是 .Net 技术专家，我们还是推荐您常常访问 <a class="reference external" href="https://docs.microsoft.com/zh-cn/dotnet/">.Net 官方文档</a>。</p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Autolabor
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
