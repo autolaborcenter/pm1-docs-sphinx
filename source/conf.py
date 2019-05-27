@@ -82,6 +82,10 @@ html_context = {
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
+html_context = {
+    'css_files': ['_static/css/page.css']
+}
+
 # import recommonmark
 # from recommonmark.transform import AutoStructify
 
