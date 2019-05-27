@@ -8,15 +8,13 @@
 
 我们还提供了一些[示例](samples)帮助您快速上手 PM1 .Net SDK。
 
-> 一个基于 SDK 和 WPF（.Net Framework） 的 Windows 应用存在于 SDK 的解决方案中，作为使用 SDK 的示例，同时也可以用于测试 PM1 底盘的性能。不同于 [PM1 Starter](../../user-guide/using-pm1-starter/doc)，这个应用程序可能快速地更新，我们不保证其随时可用。
-
 下面这个视频展示了开发 .Net 控制台应用程序的最简示例：
 
-<video src="../../_static/nuget.mp4" width="100%" height="100%" controls="controls"></video>
+<video src="../../_static/videos/nuget.mp4" width="100%" height="100%" controls="controls"></video>
 
 如果您使用 Linux，下面这个视频将展示 .Net 工具链强大的平台无关性：
 
-<video src="../../_static/nuget-linux.mp4" width="100%" height="100%" controls="controls"></video>
+<video src="../../_static/videos/nuget-linux.mp4" width="100%" height="100%" controls="controls"></video>
 
 ## 环境要求
 

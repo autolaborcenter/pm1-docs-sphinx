@@ -176,18 +176,64 @@
             
   <div class="section" id="pm1-net-api">
 <h1>PM1 .Net API 使用范例<a class="headerlink" href="#pm1-net-api" title="永久链接至标题">¶</a></h1>
-<div class="section" id="visual-studio-c-api">
-<h2>在 Visual Studio 环境下使用 C# API 开发<a class="headerlink" href="#visual-studio-c-api" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id1">
+<h2>开始学习<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<ol>
+<li><p>安装环境</p>
 <ul class="simple">
-<li><p>.Net DLL (<a class="reference external" href="#">PM1.SDK.Net.dll</a>)</p></li>
-<li><p>Native DLL (<a class="reference external" href="https://github.com/autolaborcenter/pm1_sdk/releases">pm1_sdk_native_debug.dll、pm1_sdk_native.dll</a>)</p></li>
+<li><p>安装 .Net 开发环境</p>
+<ul>
+<li><p>如果您使用 Windows，下载并安装 <a class="reference external" href="https://visualstudio.microsoft.com/downloads/">Visual Studio</a></p></li>
+<li><p>如果您使用 Linux 发行版，下载并安装 <a class="reference external" href="https://dotnet.microsoft.com/download">.Net Core</a></p></li>
 </ul>
-<blockquote>
-<div><p>注意：程序运行时还需要将 native DLL 文件拷贝至运行目录下。</p>
-</div></blockquote>
+</li>
+<li><p>下载并安装 <a class="reference external" href="https://git-scm.com/downloads">git</a></p></li>
+</ul>
+</li>
+<li><p>获取<a class="reference external" href="https://github.com/autolaborcenter/PM1.SDK.Net.Samples">示例项目</a></p>
+<ul>
+<li><p>使用 git 取得项目</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/autolaborcenter/PM1.SDK.Net.Samples.git
+</pre></div>
 </div>
-<div class="section" id="initialization-net">
-<h2>初始化示例（Initialization.Net）<a class="headerlink" href="#initialization-net" title="永久链接至标题">¶</a></h2>
+</li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="section" id="id2">
+<h2>概述<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<p>解决方案包含 4 个项目：</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>项目名称</th>
+<th>学习目标</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Initialization</code></td>
+<td>与机器人建立连接并控制机器人运动</td>
+</tr>
+<tr>
+<td><code>ContinuousControl</code></td>
+<td>理解<em>连续控制</em>的概念并实现命令行程序遥控机器人运动</td>
+</tr>
+<tr>
+<td><code>ActionControl</code></td>
+<td>理解<em>动作控制</em>的概念并控制机器人按简单路径行驶</td>
+</tr>
+<tr>
+<td><code>PM1.TestTool</code></td>
+<td>学习 SDK 如何与图形界面结合</td>
+</tr>
+</tbody>
+</table></div>
+<div class="section" id="id3">
+<h2>详细说明<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<div class="section" id="initialization">
+<h3>初始化示例（Initialization）<a class="headerlink" href="#initialization" title="永久链接至标题">¶</a></h3>
 <ul class="simple">
 <li><p>概念</p>
 <ul>
@@ -205,8 +251,8 @@
 <li><p><a class="reference external" href="https://github.com/autolaborcenter/PM1.SDK.Net.Samples">代码</a></p></li>
 </ul>
 </div>
-<div class="section" id="actioncontrol-net">
-<h2>动作控制示例（ActionControl.Net）<a class="headerlink" href="#actioncontrol-net" title="永久链接至标题">¶</a></h2>
+<div class="section" id="actioncontrol">
+<h3>动作控制示例（ActionControl）<a class="headerlink" href="#actioncontrol" title="永久链接至标题">¶</a></h3>
 <ul class="simple">
 <li><p>概念</p>
 <ul>
@@ -226,8 +272,8 @@
 <li><p><a class="reference external" href="https://github.com/autolaborcenter/PM1.SDK.Net.Samples">代码</a></p></li>
 </ul>
 </div>
-<div class="section" id="continuouscontrol-net">
-<h2>连续控制示例（ContinuousControl.Net）<a class="headerlink" href="#continuouscontrol-net" title="永久链接至标题">¶</a></h2>
+<div class="section" id="continuouscontrol">
+<h3>连续控制示例（ContinuousControl）<a class="headerlink" href="#continuouscontrol" title="永久链接至标题">¶</a></h3>
 <ul class="simple">
 <li><p>概念</p>
 <ul>
@@ -244,6 +290,7 @@
 </li>
 <li><p><a class="reference external" href="https://github.com/autolaborcenter/PM1.SDK.Net.Samples">代码</a></p></li>
 </ul>
+</div>
 </div>
 </div>
 
