@@ -53,8 +53,8 @@
 						"name": "开始使用",
 						"items": [
 							{
-								"name": "使用手柄遥控",
-								"uri": "user-guide/using-controller"
+								"name": "使用无线手柄遥控",
+								"uri": "user-guide/using-gamepad"
 							},
 							{
 								"name": "PM1 Starter 使用说明",
@@ -63,6 +63,10 @@
 							{
 								"name": "使用 ROS",
 								"uri": "user-guide/using-ros"
+							},
+							{
+								"name": "保养电池",
+								"uri": "user-guide/maintain-battery"
 							}
 						]
 					},

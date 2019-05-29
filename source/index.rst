@@ -71,6 +71,8 @@ Autolabor PM1 文档主页
 
 - :doc:`user-guide/using-ros/doc`
 
+- :doc:`user-guide/maintain-battery/doc`
+
 如果您是开发者，您可能更为关心下列主题：
 
 - 要使用 C++ 开发原生应用程序，查看下列文档：
