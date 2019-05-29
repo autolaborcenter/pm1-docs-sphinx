@@ -21,7 +21,7 @@ Autolabor PM1 文档主页
    :hidden:
    :maxdepth: -1
    :glob:
-   :caption: 开始使用
+   :caption: 使用说明
 
    user-guide/*/doc
 
@@ -70,6 +70,8 @@ Autolabor PM1 文档主页
 - :doc:`user-guide/using-pm1-starter/doc`
 
 - :doc:`user-guide/using-ros/doc`
+
+- :doc:`user-guide/maintain-battery/doc`
 
 如果您是开发者，您可能更为关心下列主题：
 

@@ -21,7 +21,7 @@ Autolabor PM1 文档主页
    :hidden:
    :maxdepth: -1
    :glob:
-   :caption: 开始使用
+   :caption: 使用说明
 
    user-guide/*/doc
 

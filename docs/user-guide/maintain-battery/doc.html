@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>autolabor_canbus_driver/CanBusService Message &mdash; Autolabor PM1  文档</title>
+  <title>保养电池 &mdash; Autolabor PM1  文档</title>
   
 
   
@@ -36,7 +36,9 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/page.css" type="text/css" />
     <link rel="index" title="索引" href="../../genindex.html" />
-    <link rel="search" title="搜索" href="../../search.html" /> 
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="使用无线手柄遥控" href="../using-gamepad/doc.html" />
+    <link rel="prev" title="服务与支持" href="../../introduction/services-and-supports.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -91,25 +93,31 @@
 <li class="toctree-l1"><a class="reference internal" href="../../introduction/services-and-supports.html">服务与支持</a></li>
 </ul>
 <p class="caption"><span class="caption-text">使用说明</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../user-guide/maintain-battery/doc.html">保养电池</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../user-guide/using-gamepad/doc.html">使用无线手柄遥控</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../user-guide/using-pm1-starter/doc.html">使用 PM1 Starter</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../user-guide/using-ros/doc.html">使用 ROS</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">保养电池</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">寿命</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">更换</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">安全</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">常见问题</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../using-gamepad/doc.html">使用无线手柄遥控</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../using-pm1-starter/doc.html">使用 PM1 Starter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../using-ros/doc.html">使用 ROS</a></li>
 </ul>
 <p class="caption"><span class="caption-text">二次开发 - 原生（C++）</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../native/readme.html">PM1 原生应用程序开发指南</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../native/api-reference/index.html">PM1 原生 API 参考</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../development/native/readme.html">PM1 原生应用程序开发指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../development/native/api-reference/index.html">PM1 原生 API 参考</a></li>
 </ul>
 <p class="caption"><span class="caption-text">二次开发 - .Net（C#）</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../dotnet/readme.html">PM1 .Net 应用程序开发指南</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../dotnet/api-reference/index.html">PM1 .Net API 参考</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../development/dotnet/readme.html">PM1 .Net 应用程序开发指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../development/dotnet/api-reference/index.html">PM1 .Net API 参考</a></li>
 </ul>
 <p class="caption"><span class="caption-text">二次开发 - ROS（C++）</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="readme.html">Autolabor ROS 驱动模块</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../development/ros/readme.html">Autolabor ROS 驱动模块</a></li>
 </ul>
 
             
@@ -155,13 +163,13 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li>autolabor_canbus_driver/CanBusService Message</li>
+      <li>保养电池</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/development/ros/CanBusService.md.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/user-guide/maintain-battery/doc.md.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -174,21 +182,40 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="autolabor-canbus-driver-canbusservice-message">
-<h1>autolabor_canbus_driver/CanBusService Message<a class="headerlink" href="#autolabor-canbus-driver-canbusservice-message" title="永久链接至标题">¶</a></h1>
-<div class="section" id="raw-message-definition">
-<h2>Raw Message Definition<a class="headerlink" href="#raw-message-definition" title="永久链接至标题">¶</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">autolabor_canbus_driver</span><span class="o">/</span><span class="n">CanBusMessage</span><span class="p">[]</span> <span class="n">requests</span> <span class="c1"># CANBus指令列表</span>
-<span class="o">---</span>
-</pre></div>
+  <p>** 敬请期待 **</p>
+<div class="section" id="id1">
+<h1>保养电池<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<div class="section" id="id2">
+<h2>寿命<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li></li>
+</ul>
 </div>
+<div class="section" id="id3">
+<h2>更换<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p>PM1 内部使用两块6-DZF-12型号的铅酸蓄电池，接线端子为6.3旗形插簧FLDNY2-250。</p></li>
+</ul>
 </div>
-<div class="section" id="compact-message-definition">
-<h2>Compact Message Definition<a class="headerlink" href="#compact-message-definition" title="永久链接至标题">¶</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">autolabor_canbus_driver</span><span class="o">/</span><span class="n">CanBusMessage</span><span class="p">[]</span> <span class="n">requests</span>
-<span class="o">---</span>
-</pre></div>
+<div class="section" id="id4">
+<h2>安全<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p>正常充电时，充电指示灯为红色，当转为绿色时为充满</p></li>
+<li><p>产品若长期不用，请三个月左右充一次电</p></li>
+<li><p>产品电池不可将电完全用完，否则会对电池造成不可逆的伤害</p></li>
+</ul>
 </div>
+<div class="section" id="id5">
+<h2>常见问题<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
+<p>Q&amp;A</p>
+<ul>
+<li><p>“为什么库仑计显示的容量比电池容量小？”</p>
+<p>“我们特意将库仑计设置的比电池实际容量小一些，旨在防止电池过度放电。”</p>
+</li>
+<li><p>“为什么会听到蜂鸣器‘滴’声响个不停？”</p>
+<p>“当剩余容量低于 1 Ah 时，PM1 会每隔 10 S 发出”</p>
+</li>
+</ul>
 </div>
 </div>
 
@@ -197,6 +224,15 @@
            
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../using-gamepad/doc.html" class="btn btn-neutral float-right" title="使用无线手柄遥控" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../../introduction/services-and-supports.html" class="btn btn-neutral float-left" title="服务与支持" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
