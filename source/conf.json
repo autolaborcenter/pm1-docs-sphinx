@@ -5,7 +5,7 @@
 		"uri 格式 1 - 相对文档：a/b/c",
 		"uri 格式 2 - 相对站内：/usedoc/ap1/a/b/c",
 		"uri 格式 3 - 绝对地址：http://www.baidu.com",
-		"_readme本身并没有什么软用"
+		"_readme 本身并没有什么软用"
 	],
 	"index": "quick_start_tutorial/doc",
 	"rewrite": {
@@ -36,6 +36,10 @@
 						"name": "了解 Autolabor PM1",
 						"items": [
 							{
+								"name": "产品介绍",
+								"uri": "introduction/intro"
+							},
+							{
 								"name": "性能参数",
 								"uri": "introduction/parameters"
 							},
@@ -54,7 +58,7 @@
 						"items": [
 							{
 								"name": "使用无线手柄遥控",
-								"uri": "user-guide/using-gamepad"
+								"uri": "user-guide/using-gamepad/doc"
 							},
 							{
 								"name": "PM1 Starter 使用说明",
@@ -62,11 +66,11 @@
 							},
 							{
 								"name": "使用 ROS",
-								"uri": "user-guide/using-ros"
+								"uri": "user-guide/using-ros/doc"
 							},
 							{
 								"name": "保养电池",
-								"uri": "user-guide/maintain-battery"
+								"uri": "user-guide/maintain-battery/doc"
 							}
 						]
 					},

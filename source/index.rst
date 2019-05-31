@@ -26,7 +26,10 @@ Autolabor PM1 文档主页
    :glob:
    :caption: 使用说明
 
-   user-guide/*/doc
+   user-guide/using-gamepad/doc
+   user-guide/using-pm1-starter/doc
+   user-guide/using-ros/doc
+   user-guide/maintain-battery/doc
 
 .. toctree::
    :hidden:
