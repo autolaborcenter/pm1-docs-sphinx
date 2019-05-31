@@ -19,5 +19,3 @@
 ## 尺寸说明
 
 ![](imgs/PM-10.jpg)
-![](imgs/PM-9.jpg)
-![](imgs/PM-11.jpg)
