@@ -15,7 +15,10 @@ Autolabor PM1 文档主页
    :glob:
    :caption: 了解 Autolabor PM1
 
-   introduction/*
+   introduction/intro
+   introduction/parameters
+   introduction/notice
+   introduction/services-and-supports
 
 .. toctree::
    :hidden:
@@ -57,13 +60,15 @@ Autolabor PM1 文档主页
 
 要深入了解有关机器人底盘的信息，查看下列文档：
 
+- :doc:`introduction/intro`
+
 - :doc:`introduction/parameters`
 
 - :doc:`introduction/notice`
 
 - :doc:`introduction/services-and-supports`
 
-有关使用 PM1 的各种方法，下列文档给出了最为详尽的说明： 
+有关使用 PM1 的各种方法，下列文档给出了最为详尽的说明：
 
 - :doc:`user-guide/using-gamepad/doc`
 
