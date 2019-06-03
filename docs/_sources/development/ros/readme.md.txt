@@ -32,13 +32,13 @@ Autolabor ROS 驱动模块包含 **CANBus 驱动**和 **Autolabor PM1 底盘驱�
 
 #### 2.1.2 发布话题
 
-/canbus_msg  ([autolabor_canbus_driver/CanBusMessage](CanBusMessage.md))
+/canbus_msg  ([autolabor_canbus_driver/CanBusMessage](CanBusMessage))
 
 > 将底层 CAN 网络中的数据发布在 ROS 话题中，提供其他节点读取
 
 #### 2.1.3 服务
 
-/canbus_server  ([autolabor_canbus_driver/CanBusService](CanBusService.md))
+/canbus_server  ([autolabor_canbus_driver/CanBusService](CanBusService))
 
 > 提供其他节点调用，用于往底层 CAN 网络中发布指令
 
@@ -70,7 +70,7 @@ Autolabor ROS 驱动模块包含 **CANBus 驱动**和 **Autolabor PM1 底盘驱�
 
 > 外部节点发送的速度信息
 
-/canbus_msg ([autolabor_canbus_driver/CanBusMessage](CanBusMessage.md))
+/canbus_msg ([autolabor_canbus_driver/CanBusMessage](CanBusMessage))
 
 > 由 canbus_driver 发送的底层 CANBus 消息，其中包含转向轮当前绝对编码器以及动力轮的编码器信息
 

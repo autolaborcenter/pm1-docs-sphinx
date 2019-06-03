@@ -27,4 +27,4 @@ autolabor::pm1::drive(
 
 # 注意
 
-这个函数是 [`drive_velocity`](drive_velocity.md) 的缩写。
+这个函数是 [`drive_velocity`](drive_velocity) 的缩写。

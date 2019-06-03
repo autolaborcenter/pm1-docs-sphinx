@@ -19,7 +19,7 @@ autolabor::pm1::check_state();
 
 # 返回值
 
-机器人当前状态，参见 [`chassis_state`](chassis_state.md)。
+机器人当前状态，参见 [`chassis_state`](chassis_state)。
 
 # 注意
 

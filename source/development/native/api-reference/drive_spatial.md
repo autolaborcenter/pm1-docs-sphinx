@@ -21,7 +21,7 @@ autolabor::pm1::drive_spatial(
 
 * **`v`** - 线速度
 * **`w`** - 角速度
-* **`s`** - 空间尺度约束，见 [`calculate_spatium`](calculate_spatium.md)
+* **`s`** - 空间尺度约束，见 [`calculate_spatium`](calculate_spatium)
 * **`progress`** - 进度，若非空，可在阻塞期间获取实时进度，取值范围 [0,1]
 
 # 返回值
