@@ -25,7 +25,7 @@ autolabor::pm1::adjust_rudder(double offset,
 
 # 注意
 
-这是一个*动作*，将阻塞当前线程直到执行完毕。可以通过调用 [`cancel_action`](cancel_action.md) 取消。
+这是一个*动作*，将阻塞当前线程直到执行完毕。可以通过调用 [`cancel_action`](cancel_action) 取消。
 
 # 参考
 

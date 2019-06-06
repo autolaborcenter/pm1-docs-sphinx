@@ -31,7 +31,7 @@ template<
 
 | 成员名                                     | 描述          |
 | ------------------------------------------ | ------------ |
-| [`operator bool`](result_operator_bool.md) | 转换到 `bool` |
+| [`operator bool`](result_operator_bool) | 转换到 `bool` |
 
 # 示例
 
