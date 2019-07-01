@@ -40,7 +40,7 @@ git clone https://github.com/autolaborcenter/pm1-docs-sphinx.git
 
 ## 贡献指南
 
-**推送或创建合并申请前，仔细阅读下列要求，并在本地编译，预览效果。**
+**推送或创建合并申请前，仔细阅读下列要求。请尽量先在本地编译，预览效果。**
 
 ### makedown 格式要求
 
