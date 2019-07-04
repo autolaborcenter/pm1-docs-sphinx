@@ -155,7 +155,7 @@ Autolabor ROS 驱动模块包含 **CANBus 驱动**和 **Autolabor PM1 底盘驱�
 
 ~publish_tf (bool, default: true)
 
-> 设置是否发布odom->base_link的TF转换
+> 设置是否发布 odom->base_link 的 TF 转换
 
 
 #### 

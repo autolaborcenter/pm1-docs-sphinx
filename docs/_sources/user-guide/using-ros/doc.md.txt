@@ -65,6 +65,8 @@ roslaunch autolabor_canbus_driver driver.launch
 
 ## 控制原地转
 
+首先使用手柄将车进行[解锁](../using-gamepad/doc)
+
 打开一个 terminal
 
 执行 rostopic list 查看有无 /cmd_vel 话题
