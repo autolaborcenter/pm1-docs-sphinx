@@ -42,14 +42,4 @@ Autolabor PM1 是一款内外革新的机器人底盘，由全新材料打造，
 
 代码全部开源，支持Windows/Linux多平台开发，支持多种语言开发（C++/C#）,提供简单易用，方便灵活的控制接口，文档详细，提供大量示例代码，提供底盘ROS驱动。
 
-#### 使用文档
-
-![](imgs/PM-12.jpg)
-
-#### 开发教程
-
-![](imgs/PM-13.jpg)
-
-#### 示例代码
-
-![](imgs/PM-14.jpg)
+[使用文档](/usedoc/pm1/user-guide/using-gamepad/doc)
