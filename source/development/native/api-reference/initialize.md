@@ -39,7 +39,11 @@ autolabor::pm1::initialize(
 
 **对于非 PM1 机器人底盘的设备，发送握手协议可能导致意想不到的后果，包括但不限于触发动作、导致异常状态甚至造成设备重置或损毁。**
 
-一旦找到机器人底盘，函数立即返回。成功之前，每一次失败的尝试需要 500ms。
+一旦找到机器人底盘，函数立即返回。成功之前，每一次失败的尝试需要 1 秒。
+
+尝试的顺序是任意的，若要指定在多个候选中自动选择，或按顺序尝试，可逐个调用指定串口名字的本函数。
+
+> 在 Linux 中，自动选择时将跳过 `dev/ttyS*`，因为目前一般计算机不会使用这样的串口，且打开此类串口可能导致函数无法超时退出。若确定机器人在此类串口上，可指定名字。
 
 # 示例
 
@@ -50,18 +54,17 @@ autolabor::pm1::initialize(
 #include "pm1_sdk.h"
 
 int main() {
-	using namespace autolabor::pm1;
+    using namespace autolabor::pm1;
 
-	auto result = initialize();
-	if (result)
-		std::cout << "connected to " << result.value
-		          << ", which may be a pm1 chassis" << std::endl;
-	else
-		std::cerr << "initialize failed, because:" << std::endl
-		          << result.error_info << std::endl;
-	return 0;
+    auto result = initialize();
+    if (result)
+        std::cout << "connected to " << result.value
+                  << ", which may be a pm1 chassis" << std::endl;
+    else
+        std::cerr << "initialize failed, because:" << std::endl
+                  << result.error_info << std::endl;
+    return 0;
 }
-
 ```
 
 可能的输出：

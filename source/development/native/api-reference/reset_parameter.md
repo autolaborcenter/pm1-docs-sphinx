@@ -30,17 +30,16 @@ autolabor::pm1::reset_parameter(
 下面一段代码调用 `reset_parameter()`，重置参数到默认值：
 
 ```c++
-#include <iostream>
-
 #include "pm1_sdk.h"
 
 int main() {
     using namespace autolabor::pm1;
-   
+
     if (!initialize()) return 1;
     reset_parameter(parameter_id::width);
     reset_parameter(parameter_id::length);
-    reset_parameter(parameter_id::wheel_radius);
+    reset_parameter(parameter_id::left_radius);
+    reset_parameter(parameter_id::right_radius);
     reset_parameter(parameter_id::max_wheel_speed);
     reset_parameter(parameter_id::max_v);
     reset_parameter(parameter_id::max_w);

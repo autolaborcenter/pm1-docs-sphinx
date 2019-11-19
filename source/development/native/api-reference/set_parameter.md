@@ -32,15 +32,11 @@ autolabor::pm1::set_parameter(
 下面一段代码调用 `set_parameter()`，设置标定得到的动力轮半径新值：
 
 ```c++
-#include <iostream>
-
 #include "pm1_sdk.h"
 
 int main() {
-   using namespace autolabor::pm1;
-   
-   if (!initialize()) return 1;
-   set_parameter(parameter_id::wheel_radius, 0.12);
+    using namespace autolabor::pm1;
+
+    if (initialize()) set_parameter(parameter_id::max_wheel_speed, .5);
 }
 ```
-

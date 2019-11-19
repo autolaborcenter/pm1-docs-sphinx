@@ -177,13 +177,13 @@
             
   <div class="section" id="autolabor-pm1-chassis-state">
 <h1>autolabor::pm1::chassis_state<a class="headerlink" href="#autolabor-pm1-chassis-state" title="永久链接至标题">¶</a></h1>
-<p>定义于头文件 <a class="reference external" href="https://github.com/autolaborcenter/pm1_sdk/blob/master/src/main/pm1_sdk.h"><code class="docutils literal notranslate"><span class="pre">pm1_sdk.h</span></code></a></p>
+<p>定义于头文件 <a class="reference external" href="https://github.com/autolaborcenter/pm1_sdk/blob/master/src/main/pm1_sdk_definitions.h"><code class="docutils literal notranslate"><span class="pre">pm1_sdk_definitions.h</span></code></a></p>
 <hr class="docutils" />
-<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">enum</span> <span class="k">class</span> <span class="nc">chassis_state</span> <span class="o">:</span> <span class="kt">uint8_t</span> <span class="p">{</span>
-	<span class="n">offline</span>  <span class="o">=</span> <span class="mh">0x00</span><span class="p">,</span> <span class="c1">// 未知（离线）</span>
-	<span class="n">unlocked</span> <span class="o">=</span> <span class="mh">0x01</span><span class="p">,</span> <span class="c1">// 未锁定</span>
-	<span class="n">error</span>    <span class="o">=</span> <span class="mh">0x7f</span><span class="p">,</span> <span class="c1">// 已连接但异常</span>
-	<span class="n">locked</span>   <span class="o">=</span> <span class="mh">0xff</span>  <span class="c1">// 已锁定</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">enum</span> <span class="k">class</span> <span class="nc">chassis_state</span> <span class="o">:</span> <span class="kt">unsigned</span> <span class="kt">char</span> <span class="p">{</span>
+    <span class="n">offline</span>  <span class="o">=</span> <span class="mh">0x00</span><span class="p">,</span> <span class="c1">// 离线</span>
+    <span class="n">unlocked</span> <span class="o">=</span> <span class="mh">0x01</span><span class="p">,</span> <span class="c1">// 未锁定</span>
+    <span class="n">error</span>    <span class="o">=</span> <span class="mh">0x7f</span><span class="p">,</span> <span class="c1">// 已连接但异常</span>
+    <span class="n">locked</span>   <span class="o">=</span> <span class="mh">0xff</span>  <span class="c1">// 已锁定</span>
 <span class="p">};</span>
 </pre></div>
 </div>

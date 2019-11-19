@@ -33,16 +33,16 @@ autolabor::pm1::get_parameter(
 
 ```c++
 #include <iostream>
-
 #include "pm1_sdk.h"
 
 int main() {
-	using namespace autolabor::pm1;
-	
-	if (!initialize()) return 1;
+    using namespace autolabor::pm1;
+
+    if (!initialize()) return 1;
     std::cout << "width          : " << get_parameter(parameter_id::width).value << std::endl
               << "length         : " << get_parameter(parameter_id::length).value << std::endl
-              << "wheel_radius   : " << get_parameter(parameter_id::wheel_radius).value << std::endl
+              << "left_radius    : " << get_parameter(parameter_id::left_radius).value << std::endl
+              << "right_radius   : " << get_parameter(parameter_id::right_radius).value << std::endl
               << "max_wheel_speed: " << get_parameter(parameter_id::max_wheel_speed).value << std::endl
               << "max_v          : " << get_parameter(parameter_id::max_v).value << std::endl
               << "max_w          : " << get_parameter(parameter_id::max_w).value << std::endl
@@ -54,11 +54,13 @@ int main() {
 可能的输出：
 
 ```shell
-width          : 0.41
-length         : 0.324
-wheel_radius   : 0.1
+width          : 0.465
+length         : 0.355
+left_radius    : 0.105
+right_radius   : 0.105
+max_wheel_speed: 1.1
+max_v          : 1.1
+max_w          : 0.785398
 optimize_width : 0.785398
-acceleration   : 6.28319
-max_v          : inf
-max_w          : 1.0472
+acceleration   : 1
 ```

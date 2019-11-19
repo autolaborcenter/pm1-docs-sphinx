@@ -204,15 +204,12 @@
 <div class="section" id="id3">
 <h1>示例<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h1>
 <p>下面一段代码调用 <code class="docutils literal notranslate"><span class="pre">set_parameter()</span></code>，设置标定得到的动力轮半径新值：</p>
-<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
-
-<span class="cp">#include</span> <span class="cpf">&quot;pm1_sdk.h&quot;</span><span class="cp"></span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&quot;pm1_sdk.h&quot;</span><span class="cp"></span>
 
 <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-   <span class="k">using</span> <span class="k">namespace</span> <span class="n">autolabor</span><span class="o">::</span><span class="n">pm1</span><span class="p">;</span>
-   
-   <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">initialize</span><span class="p">())</span> <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
-   <span class="n">set_parameter</span><span class="p">(</span><span class="n">parameter_id</span><span class="o">::</span><span class="n">wheel_radius</span><span class="p">,</span> <span class="mf">0.12</span><span class="p">);</span>
+    <span class="k">using</span> <span class="k">namespace</span> <span class="n">autolabor</span><span class="o">::</span><span class="n">pm1</span><span class="p">;</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="n">initialize</span><span class="p">())</span> <span class="n">set_parameter</span><span class="p">(</span><span class="n">parameter_id</span><span class="o">::</span><span class="n">max_wheel_speed</span><span class="p">,</span> <span class="mf">.5</span><span class="p">);</span>
 <span class="p">}</span>
 </pre></div>
 </div>

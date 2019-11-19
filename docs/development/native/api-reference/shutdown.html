@@ -179,7 +179,7 @@
 <h1>autolabor::pm1::shutdown<a class="headerlink" href="#autolabor-pm1-shutdown" title="永久链接至标题">¶</a></h1>
 <p>声明于头文件 <a class="reference external" href="https://github.com/autolaborcenter/pm1_sdk/blob/master/src/main/pm1_sdk.h"><code class="docutils literal notranslate"><span class="pre">pm1_sdk.h</span></code></a></p>
 <hr class="docutils" />
-<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">autolabor</span><span class="o">::</span><span class="n">pm1</span><span class="o">::</span><span class="n">result</span><span class="o">&lt;</span><span class="kt">void</span><span class="o">&gt;</span> 
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">autolabor</span><span class="o">::</span><span class="n">pm1</span><span class="o">::</span><span class="n">result</span><span class="o">&lt;</span><span class="kt">void</span><span class="o">&gt;</span>
 <span class="n">autolabor</span><span class="o">::</span><span class="n">pm1</span><span class="o">::</span><span class="n">shutdown</span><span class="p">();</span>
 </pre></div>
 </div>
@@ -206,19 +206,19 @@
 <span class="cp">#include</span> <span class="cpf">&quot;pm1_sdk.h&quot;</span><span class="cp"></span>
 
 <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-	<span class="k">using</span> <span class="k">namespace</span> <span class="n">autolabor</span><span class="o">::</span><span class="n">pm1</span><span class="p">;</span>
-    
-	<span class="n">std</span><span class="o">::</span><span class="kr">thread</span><span class="p">([]</span> <span class="p">{</span>
-		<span class="k">while</span> <span class="p">(</span><span class="nb">true</span><span class="p">)</span> <span class="p">{</span>
-			<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">(</span><span class="n">check_state</span><span class="p">())</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-			<span class="n">delay</span><span class="p">(</span><span class="mf">0.1</span><span class="p">);</span>
-		<span class="p">}</span>
-	<span class="p">}).</span><span class="n">detach</span><span class="p">();</span>
-	
-	<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">initialize</span><span class="p">())</span> <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
-	<span class="n">delay</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
-	<span class="n">shutdown</span><span class="p">();</span>
-	<span class="n">delay</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+    <span class="k">using</span> <span class="k">namespace</span> <span class="n">autolabor</span><span class="o">::</span><span class="n">pm1</span><span class="p">;</span>
+
+    <span class="n">std</span><span class="o">::</span><span class="kr">thread</span><span class="p">([]</span> <span class="p">{</span>
+        <span class="k">while</span> <span class="p">(</span><span class="nb">true</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">(</span><span class="n">check_state</span><span class="p">())</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+            <span class="n">delay</span><span class="p">(</span><span class="mf">0.1</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}).</span><span class="n">detach</span><span class="p">();</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">initialize</span><span class="p">())</span> <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+    <span class="n">shutdown</span><span class="p">();</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
 <span class="p">}</span>
 </pre></div>
 </div>

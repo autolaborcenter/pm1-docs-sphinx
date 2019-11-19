@@ -33,7 +33,7 @@ autolabor::pm1::get_odometry();
 int main() {
    using namespace autolabor::pm1;
    using namespace std::chrono_literals;
-   
+
    if (!initialize()) return 1;
    auto time = std::chrono::steady_clock::now();
    while (std::chrono::steady_clock::now() - time < 3s) {

@@ -204,16 +204,16 @@
 <h1>示例<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h1>
 <p>下面一段代码调用 <code class="docutils literal notranslate"><span class="pre">get_parameter()</span></code>，依次打印所有参数的当前值：</p>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
-
 <span class="cp">#include</span> <span class="cpf">&quot;pm1_sdk.h&quot;</span><span class="cp"></span>
 
 <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-	<span class="k">using</span> <span class="k">namespace</span> <span class="n">autolabor</span><span class="o">::</span><span class="n">pm1</span><span class="p">;</span>
-	
-	<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">initialize</span><span class="p">())</span> <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="k">using</span> <span class="k">namespace</span> <span class="n">autolabor</span><span class="o">::</span><span class="n">pm1</span><span class="p">;</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">initialize</span><span class="p">())</span> <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
     <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;width          : &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">get_parameter</span><span class="p">(</span><span class="n">parameter_id</span><span class="o">::</span><span class="n">width</span><span class="p">).</span><span class="n">value</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span>
               <span class="o">&lt;&lt;</span> <span class="s">&quot;length         : &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">get_parameter</span><span class="p">(</span><span class="n">parameter_id</span><span class="o">::</span><span class="n">length</span><span class="p">).</span><span class="n">value</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span>
-              <span class="o">&lt;&lt;</span> <span class="s">&quot;wheel_radius   : &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">get_parameter</span><span class="p">(</span><span class="n">parameter_id</span><span class="o">::</span><span class="n">wheel_radius</span><span class="p">).</span><span class="n">value</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span>
+              <span class="o">&lt;&lt;</span> <span class="s">&quot;left_radius    : &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">get_parameter</span><span class="p">(</span><span class="n">parameter_id</span><span class="o">::</span><span class="n">left_radius</span><span class="p">).</span><span class="n">value</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span>
+              <span class="o">&lt;&lt;</span> <span class="s">&quot;right_radius   : &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">get_parameter</span><span class="p">(</span><span class="n">parameter_id</span><span class="o">::</span><span class="n">right_radius</span><span class="p">).</span><span class="n">value</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span>
               <span class="o">&lt;&lt;</span> <span class="s">&quot;max_wheel_speed: &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">get_parameter</span><span class="p">(</span><span class="n">parameter_id</span><span class="o">::</span><span class="n">max_wheel_speed</span><span class="p">).</span><span class="n">value</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span>
               <span class="o">&lt;&lt;</span> <span class="s">&quot;max_v          : &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">get_parameter</span><span class="p">(</span><span class="n">parameter_id</span><span class="o">::</span><span class="n">max_v</span><span class="p">).</span><span class="n">value</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span>
               <span class="o">&lt;&lt;</span> <span class="s">&quot;max_w          : &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">get_parameter</span><span class="p">(</span><span class="n">parameter_id</span><span class="o">::</span><span class="n">max_w</span><span class="p">).</span><span class="n">value</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span>
@@ -223,13 +223,15 @@
 </pre></div>
 </div>
 <p>可能的输出：</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>width          : <span class="m">0</span>.41
-length         : <span class="m">0</span>.324
-wheel_radius   : <span class="m">0</span>.1
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>width          : <span class="m">0</span>.465
+length         : <span class="m">0</span>.355
+left_radius    : <span class="m">0</span>.105
+right_radius   : <span class="m">0</span>.105
+max_wheel_speed: <span class="m">1</span>.1
+max_v          : <span class="m">1</span>.1
+max_w          : <span class="m">0</span>.785398
 optimize_width : <span class="m">0</span>.785398
-acceleration   : <span class="m">6</span>.28319
-max_v          : inf
-max_w          : <span class="m">1</span>.0472
+acceleration   : <span class="m">1</span>
 </pre></div>
 </div>
 </div>
