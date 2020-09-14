@@ -26,10 +26,14 @@
 		"items": [
 			{
 				"name": "Autolabor PM1",
+				"uri": "/usedoc/pmNavigationkit/user_guide/pre_work/guide"
+			},
+			{
+				"name": "PM1 底盘",
 				"isOpen": true,
 				"items": [
 					{
-						"name": "PM1 快速入门指南",
+						"name": "快速入门指南",
 						"uri": "quick_start_tutorial/doc"
 					},
 					{
@@ -115,11 +119,8 @@
 						]
 					}
 				]
-			},
-			{
-				"name": "Autolabor PM1 导航套件",
-				"uri": "/usedoc/pmNavigationkit/user_guide/pre_work/guide"
 			}
+			
 		]
 	}
 }
