@@ -29,7 +29,7 @@ Autolabor PM1 文档主页
    user-guide/using-gamepad/doc
    user-guide/using-pm1-starter/doc
    user-guide/using-ros/doc
-   user-guide/maintain-battery/doc
+   user-guide/battery-and-related/doc
 
 .. toctree::
    :hidden:
@@ -79,7 +79,7 @@ Autolabor PM1 文档主页
 
 - :doc:`user-guide/using-ros/doc`
 
-- :doc:`user-guide/maintain-battery/doc`
+- :doc:`user-guide/battery-and-related/doc`
 
 如果您是开发者，您可能更为关心下列主题：
 

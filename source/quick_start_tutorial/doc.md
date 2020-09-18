@@ -34,7 +34,7 @@
 
 2. 长按库仑计右侧的 `^` （向上箭头）按键，听到“滴”声反馈后，松开按键即完成校准。
 
-> 更多电池相关信息请参考[保养电池](../user-guide/maintain-battery/doc)。
+> 更多电池相关信息请参考[电池及相关](../user-guide/battery-and-related/doc)。
 
 ## 无线手柄控制
 

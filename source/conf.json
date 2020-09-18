@@ -73,8 +73,8 @@
 								"uri": "user-guide/using-ros/doc"
 							},
 							{
-								"name": "保养电池",
-								"uri": "user-guide/maintain-battery/doc"
+								"name": "电池及相关",
+								"uri": "user-guide/battery-and-related/doc"
 							}
 						]
 					},
