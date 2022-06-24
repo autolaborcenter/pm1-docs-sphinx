@@ -2,6 +2,9 @@
 
 本工程是 PM1 底盘官方使用手册的 **`Sphinx` 工程**。
 
+## 官网地址
+<http://www.autolabor.com.cn/usedoc/pm1>
+
 ## 克隆项目
 
 ```shell
